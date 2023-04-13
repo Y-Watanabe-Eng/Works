@@ -45,18 +45,14 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*headerブロック*/
 header {
-	text-align: center;	/*内容を中央よせ*/
-}
-/*ロゴ画像設定*/
-#logo img {
-	width: 400px;	/*画像幅*/
-	margin: 40px auto 40px;	/*ロゴの上と下に40pxスペースを空ける設定*/
+	text-align: left;	/*内容を左よせ*/
 }
 
 /*トップページのメイン画像
 ---------------------------------------------------------------------------*/
 /*画像ブロック*/
 #photo img {
+　　　　　margin-top: 40px;
 	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 	margin-bottom: 40px;	/*下に空けるスペース*/
 }
@@ -89,9 +85,9 @@ header {
 #contents h2 {
 	clear: both;
 	margin-bottom: 20px;
-	color: #fff;		/*文字色*/
+	color: #ffffff;		/*文字色*/
 	padding: 10px 20px;	/*上下、左右への余白*/
-	background: #ea021c;	/*背景色*/
+	background: #333333;	/*背景色*/
 	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 /*コンテンツのh3タグの設定*/
@@ -99,8 +95,8 @@ header {
 	clear: both;
 	margin-bottom: 20px;
 	padding: 8px 20px;	/*上下、左右への余白*/
-	background: #000;	/*背景色*/
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+	background: #333333;	/*背景色*/
+	border: 1px solid #cccccc;	/*枠線の幅、線種、色*/
 	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 /*コンテンツのp(段落)タグ設定*/
