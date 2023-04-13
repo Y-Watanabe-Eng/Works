@@ -6,7 +6,8 @@
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
-body {
+body
+{
 	margin: 0px;
 	padding: 0px;
 	-webkit-text-size-adjust: none;
@@ -14,9 +15,17 @@ body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 16px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
-	background: #333333;	/*背景色*/
+	background: #000000;	/*背景色*/
 }
-h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+
+h1
+{
+color: #ffffff;	/*全体の文字色*/
+font-size: 22px;	/*文字サイズ*/
+background: #333333;	/*背景色*/
+}
+
+
 ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
@@ -25,11 +34,13 @@ iframe {width: 100%;}
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
-a {
+a
+{
 	color: #ffffff;	/*リンクテキストの色*/
 	transition: 0.3s;	/*マウスオン時の移り変わるまでの時間設定。0.3秒。*/
 }
-a:hover {
+a:hover
+{
 	color: #ea021c;	/*マウスオン時の文字色*/
 }
 
@@ -44,7 +55,8 @@ a:hover {
 /*ヘッダー（ロゴが入った最上段のブロック）
 ---------------------------------------------------------------------------*/
 /*headerブロック*/
-header {
+header
+{
 	text-align: left;	/*内容を左よせ*/
 }
 
