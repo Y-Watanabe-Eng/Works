@@ -23,7 +23,7 @@ ul {list-style-type: none;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 hr
 {
-border: solid 1px #dcd4c1;
+border: solid 1px #cdb897;
 }
 
 
@@ -211,5 +211,5 @@ padding: 15px 10px;
 border: solid 1px #ffffff;
 color: #000000;
 background: #ffffff;
-padding: 15px 80px;
+padding: 15px 85px;
 }
