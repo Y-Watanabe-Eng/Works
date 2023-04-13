@@ -91,6 +91,7 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 #menubar li span
 {
 	border: solid 1px #ffffff;
+	padding: 30px 15px;
 }
 
 
