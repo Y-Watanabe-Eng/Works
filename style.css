@@ -20,9 +20,10 @@ body
 
 h1
 {
+text-align: center;	/*内容を左よせ*/
 color: #ffffff;	/*全体の文字色*/
 font-size: 22px;	/*文字サイズ*/
-background: #333333;	/*背景色*/
+background: #000000;	/*背景色*/
 }
 
 
@@ -57,30 +58,35 @@ a:hover
 /*headerブロック*/
 header
 {
-	text-align: left;	/*内容を左よせ*/
+text-align: center;	/*内容を中央よせ*/
 }
 
 /*トップページのメイン画像
 ---------------------------------------------------------------------------*/
 /*画像ブロック*/
-#photo img {
-　　　　　margin-top: 40px;
-	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
-	margin-bottom: 40px;	/*下に空けるスペース*/
+#photo img
+{
+margin-top: 40px;
+border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
 /*メニュー
 ---------------------------------------------------------------------------*/
 /*メニュー全体を囲むブロック*/
-#menubar {
-	text-align: center;		/*文字をセンタリング*/
-	font-size: 18px;		/*文字サイズ*/
-	margin-bottom: 40px;	/*下に空けるスペース*/
+#menubar
+{
+text-align: center;		/*文字をセンタリング*/
+font-size: 18px;		/*文字サイズ*/
+margin-bottom: 40px;	/*下に空けるスペース*/
 }
+
 /*メニュー１個あたりの設定*/
-#menubar li {
+#menubar li
+{
 	display: inline;	/*横並びにする設定*/
 }
+
 #menubar li a {
 	text-decoration: none;
 	padding: 15px 30px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
@@ -127,28 +133,6 @@ header
 	margin-top: 30px;
 }
 
-/*Galleryページ
----------------------------------------------------------------------------*/
-/*各ブロックごとの設定*/
-.list {
-	overflow: hidden;
-	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
-	padding: 20px;	/*ボックス内の余白*/
-}
-/*h4見出しの設定*/
-.list h4 {
-	color: #ea021c;	/*文字色*/
-}
-/*画像の設定*/
-.list img {
-	width: 20%;			/*画像幅*/
-	float: left;		/*画像を左に回り込み*/
-	margin-right: 3%	/*画像の右側に空けるスペース*/
-}
-/*段落タグ*/
-.list p {
-	padding: 0 !important;
-}
 
 /*フッター(ページ最下部のcopyrightのパーツ)設定
 ---------------------------------------------------------------------------*/
@@ -217,24 +201,11 @@ footer .pr {
 	width: 30%;			/*幅*/
 }
 
-/*トップページのNEWアイコン
----------------------------------------------------------------------------*/
-.newicon {
-	background: #F00;	/*背景色*/
-	color: #FFF;		/*文字色*/
-	font-size: 70%;
-	line-height: 1.5;
-	padding: 2px 5px;
-	border-radius: 2px;
-	margin: 0px 5px;
-	vertical-align: text-top;
-}
 
 /*その他
 ---------------------------------------------------------------------------*/
 .look {background: #555555;padding: 5px 10px;border-radius: 4px;}
 .mb15,.mb1em {margin-bottom: 15px;}
-.color1 {color: #ea021c;}
 .pr {font-size: 12px;}
 .wl {width: 96%;}
 .ws {width: 50%;}
@@ -259,19 +230,12 @@ body {
 ---------------------------------------------------------------------------*/
 /*メニュー１個あたりの設定*/
 #menubar li {
-	display: block;	/*縦並びにする設定*/
+	display: inline;	/*横並びにする設定*/
 	margin-bottom: 10px;
 }
 #menubar li a {
 	text-decoration: none;
 	padding: 8px 30px;	/*各メニュー内の余白。*/
-}
-
-/*Galleryページ
----------------------------------------------------------------------------*/
-/*各ブロックごとの設定*/
-.list {
-	padding: 10px;	/*ボックス内の余白*/
 }
 
 /*その他
