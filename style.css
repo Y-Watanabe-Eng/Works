@@ -97,8 +97,9 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 
 #menubar li a {
 	text-decoration: none;
-	padding: 15px 30px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
+	padding: 30px 15px;
 }
+
 /*マウスオン時の設定*/
 #menubar li a:hover {
 	color: #ea021c;
