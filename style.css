@@ -71,7 +71,7 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 #menubar
 {
 text-align: center;		/*文字をセンタリング*/
-font-size: 24px;		/*文字サイズ*/
+font-size: 16px;		/*文字サイズ*/
 margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
@@ -79,8 +79,8 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 #menubar li
 {
 display: inline;	/*横並びにする設定*/
-margin-top: 40px;
-margin-bottom: 40px;
+margin: 40px 0px;
+padding: 8px 0px;
 }
 
 #menubar li span
