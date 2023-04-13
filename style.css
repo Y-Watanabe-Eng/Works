@@ -130,7 +130,7 @@ background: #000000;	/*背景色*/
 border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 
-p1
+p
 {
 text-align: left;
 padding: 0px 0px 0px;	/*上、左右、下への余白*/
