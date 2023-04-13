@@ -98,9 +98,17 @@ padding: 30px 10px;
 }
 
 
-#menubar li a {
-	text-decoration: none;
+#menubar li a1
+{
+text-decoration: none;
 }
+
+#menubar li a2
+{
+text-decoration: none;
+color: #000000;
+}
+
 
 /*マウスオン時の設定*/
 #menubar li a:hover {
@@ -195,12 +203,5 @@ padding: 20px 10px;
 border: solid 1px #ffffff;
 color: #000000;
 background: #ffffff;
-padding: 20px 10px;
-}
-
-
-
-
-#menubar li a {
-	text-decoration: none;
+padding: 20px 30px;
 }
