@@ -116,6 +116,7 @@ background: #333333;	/*背景色*/
 border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 
+
 h3
 {
 text-align: left;
@@ -130,12 +131,12 @@ border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば
 p1
 {
 text-align: left;
-padding: 0px 20px 0px;	/*上、左右、下への余白*/
+padding: 0px 0px 0px;	/*上、左右、下への余白*/
 }
 
 p2
 {
-padding: 0px 20px 0px;	/*上、左右、下への余白*/
+padding: 0px 0px 0px;	/*上、左右、下への余白*/
 }
 
 /*フッター設定
