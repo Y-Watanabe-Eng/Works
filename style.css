@@ -70,55 +70,6 @@ border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば
 margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
-/*メニュー
----------------------------------------------------------------------------*/
-/*メニュー全体を囲むブロック*/
-#menubar
-{
-text-align: center;		/*文字をセンタリング*/
-font-size: 22px;		/*文字サイズ*/
-margin-bottom: 40px;	/*下に空けるスペース*/
-}
-
-/*メニュー１個あたりの設定*/
-#menubar li
-{
-display: block;	/*横並びにする設定*/
-margin: 40px 0px;
-}
-
-#menubar li span1
-{
-border: solid 1px #ffffff;
-padding: 20px 10px;
-}
-
-#menubar li span2
-{
-border: solid 1px #ffffff;
-color: #000000;
-background: #ffffff;
-padding: 15px 120px;
-}
-
-
-#menubar li a1
-{
-text-decoration: none;
-}
-
-#menubar li a2
-{
-text-decoration: none;
-color: #000000;
-}
-
-
-/*マウスオン時の設定*/
-#menubar li a:hover {
-	color: #ea021c;
-}
-
 
 h1
 {
@@ -157,6 +108,58 @@ p
 text-align: left;
 padding: 0px 0px 0px;	/*上、左右、下への余白*/
 }
+
+
+
+/*メニュー
+---------------------------------------------------------------------------*/
+/*メニュー全体を囲むブロック*/
+#menubar
+{
+text-align: center;		/*文字をセンタリング*/
+font-size: 22px;		/*文字サイズ*/
+margin-bottom: 40px;	/*下に空けるスペース*/
+}
+
+/*メニュー１個あたりの設定*/
+#menubar li
+{
+display: block;	/*横並びにする設定*/
+margin: 40px 0px;
+}
+
+#menubar li span1
+{
+border: solid 1px #ffffff;
+padding: 20px 10px;
+}
+
+#menubar li span2
+{
+border: solid 1px #ffffff;
+color: #000000;
+background: #ffffff;
+padding: 15px 110px;
+}
+
+
+#menubar li a1
+{
+text-decoration: none;
+}
+
+#menubar li a2
+{
+text-decoration: none;
+color: #000000;
+}
+
+
+/*マウスオン時の設定*/
+#menubar li a:hover {
+	color: #ea021c;
+}
+
 
 /*フッター設定
 ---------------------------------------------------------------------------*/
@@ -200,7 +203,7 @@ margin-bottom: 40px;
 #menubar li span1
 {
 border: solid 1px #ffffff;
-padding: 20px 10px;
+padding: 15px 10px;
 }
 
 #menubar li span2
@@ -208,5 +211,5 @@ padding: 20px 10px;
 border: solid 1px #ffffff;
 color: #000000;
 background: #ffffff;
-padding: 15px 100px;
+padding: 15px 90px;
 }
