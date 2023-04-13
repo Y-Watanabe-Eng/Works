@@ -93,7 +93,7 @@ padding: 20px 10px;
 border: solid 1px #ffffff;
 color: #000000;
 background: #ffffff;
-padding: 20px 60px;
+padding: 15px 80px;
 }
 
 
@@ -180,6 +180,7 @@ body {
 #menubar
 {
 font-size: 16px;
+line-height: 4;
 }
 
 
@@ -202,5 +203,5 @@ padding: 20px 10px;
 border: solid 1px #ffffff;
 color: #000000;
 background: #ffffff;
-padding: 20px 60px;
+padding: 15px 80px;
 }
