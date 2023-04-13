@@ -8,21 +8,14 @@
 ---------------------------------------------------------------------------*/
 body
 {
-	margin: 0px;
-	padding: 0px;
-	-webkit-text-size-adjust: none;
-	color: #ffffff;	/*全体の文字色*/
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
-	font-size: 16px;	/*文字サイズ*/
-	line-height: 2;		/*行間*/
-	background: #000000;	/*背景色*/
-}
-
-h1
-{
-text-align: left;	/*内容を左よせ*/
+text-align: center;
+margin: 0px;
+padding: 0px;
+-webkit-text-size-adjust: none;
 color: #ffffff;	/*全体の文字色*/
-font-size: 28px;	/*文字サイズ*/
+font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+font-size: 16px;	/*文字サイズ*/
+line-height: 2;		/*行間*/
 background: #000000;	/*背景色*/
 }
 
@@ -107,14 +100,24 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
 
+h1
+{
+text-align: left;	/*内容を左よせ*/
+color: #ffffff;	/*全体の文字色*/
+font-size: 28px;	/*文字サイズ*/
+background: #000000;	/*背景色*/
+}
+
+
 h2
 {
-	clear: both;
-	margin-bottom: 20px;
-	color: #ffffff;		/*文字色*/
-	padding: 10px 20px;	/*上下、左右への余白*/
-	background: #333333;	/*背景色*/
-	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+text-align: left;
+clear: both;
+margin-bottom: 20px;
+color: #ffffff;		/*文字色*/
+padding: 10px 20px;	/*上下、左右への余白*/
+background: #333333;	/*背景色*/
+border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 
 h3
@@ -129,7 +132,7 @@ h3
 
 p
 {
-	padding: 0px 20px 20px;	/*上、左右、下への余白*/
+	padding: 0px 20px 0px;	/*上、左右、下への余白*/
 }
 
 p + p {
