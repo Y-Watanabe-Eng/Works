@@ -86,9 +86,8 @@ text-align: left;
 clear: both;
 margin-bottom: 20px;
 color: #ffffff;		/*文字色*/
-padding: 10px 20px;	/*上下、左右への余白*/
-background: #333333;	/*背景色*/
-border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+font-size: 22px;	/*文字サイズ*/
+background: #000000;	/*背景色*/
 }
 
 
