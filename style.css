@@ -88,14 +88,20 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 	display: inline;	/*横並びにする設定*/
 }
 
+#menubar li span
+{
+	border: solid 1px #ffffff;
+}
+
+
+
 #menubar li a {
 	text-decoration: none;
 	padding: 15px 30px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
 }
 /*マウスオン時の設定*/
 #menubar li a:hover {
-	color: #ea021c;	/*文字色*/
-	border-bottom: 4px solid #ea021c;	/*下線の幅、線種、色*/
+	color: #ea021c;
 }
 
 
