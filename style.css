@@ -20,9 +20,9 @@ body
 
 h1
 {
-text-align: center;	/*内容を左よせ*/
+text-align: left;	/*内容を左よせ*/
 color: #ffffff;	/*全体の文字色*/
-font-size: 22px;	/*文字サイズ*/
+font-size: 28px;	/*文字サイズ*/
 background: #000000;	/*背景色*/
 }
 
@@ -219,9 +219,11 @@ body {
 /*メニュー
 ---------------------------------------------------------------------------*/
 /*メニュー１個あたりの設定*/
-#menubar li {
-	display: inline;	/*横並びにする設定*/
-	margin-bottom: 10px;
+#menubar li
+{
+text-align: left;
+display: block;	/*縦並びにする設定*/
+margin-bottom: 10px;
 }
 #menubar li a {
 	text-decoration: none;
