@@ -21,6 +21,11 @@ background: #000000;	/*背景色*/
 
 ul {list-style-type: none;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+hr
+{
+border: solid 2px #dcd4c1;
+}
+
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
