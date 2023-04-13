@@ -51,6 +51,7 @@ padding: 0 3%;
 header
 {
 text-align: left;	/*内容を左よせ*/
+line-height: 0.5;		/*行間*/
 }
 
 /*トップページのメイン画像
@@ -70,7 +71,7 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 #menubar
 {
 text-align: center;		/*文字をセンタリング*/
-font-size: 22px;		/*文字サイズ*/
+font-size: 20px;		/*文字サイズ*/
 margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
