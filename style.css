@@ -71,7 +71,7 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 #menubar
 {
 text-align: center;		/*文字をセンタリング*/
-font-size: 16px;		/*文字サイズ*/
+font-size: 22px;		/*文字サイズ*/
 margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
@@ -166,6 +166,12 @@ body {
 
 /*メニュー
 ---------------------------------------------------------------------------*/
+#menubar
+{
+font-size: 16px;
+}
+
+
 /*メニュー１個あたりの設定*/
 #menubar li
 {
