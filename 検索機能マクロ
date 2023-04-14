@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Y.Watanabe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ポートフォリオサイト">
+<meta name="keywords" content="VBA,Python,プログラマ,エンジニア,コード">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1><a href="index.html" class="title">Y.Watanabe</a></h1>
+<p>ポートフォリオサイト</p>
+</header>
+
+<hr>
+
+<h1>Visual Basic</h1>
+<h1>for Applications</h1>
+<p>＞検索機能マクロ</p>
+<br/>
+<br/>
+
+
+
+<br/>
+<hr>
+
+<footer>
+<small>Copyright&copy; Y.Watanabe All Rights Reserved.</small>
+</footer>
+
+</div>
+<!--/container-->
+
+</body>
+</html>
