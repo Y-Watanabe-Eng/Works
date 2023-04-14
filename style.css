@@ -1,4 +1,4 @@
-@charset "utf-8";
+うん@charset "utf-8";
 
 
 /*PC・タブレット・スマホ(全端末)共通設定
@@ -57,6 +57,7 @@ font-size: 22px;		/*文字サイズ*/
 line-height: 2;
 border: solid 1px #ffffff;
 padding: 10px 10px;
+margin-bottom: 40px;
 width:60%;
 }
 
@@ -78,6 +79,7 @@ font-size: 22px;		/*文字サイズ*/
 line-height: 2;
 border: solid 1px #ffffff;
 padding: 10px 10px;
+margin-bottom: 40px;
 width:60%;
 }
 
