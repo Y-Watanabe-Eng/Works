@@ -22,11 +22,14 @@ background: #000000;	/*背景色*/
 }
 
 ul {list-style-type: none;}
+
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+
 hr
 {
 border: solid 1px #cdb897;
 }
+
 
 
 /*リンク（全般）設定
@@ -202,18 +205,23 @@ color: #000000;
 }
 
 /*マウスオン時の設定*/
-#menubar li a:hover {
-	color: #ea021c;
+#menubar li a:hover
+{
+color: #ea021c;
 }
 
 
+.link
+{
+
+}
 
 
 .box
 {
-	background: #333333;
-	border-radius: 10px;
-	padding: 1em;
+background: #333333;
+border-radius: 10px;
+padding: 1em;
 }
 
 
@@ -239,6 +247,11 @@ body
 {
 font-size: 12px;	/*文字サイズ*/
 line-height: 1.5;	/*行間*/
+}
+
+.link
+{
+text-align: left;
 }
 
 
