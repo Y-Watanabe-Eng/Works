@@ -213,8 +213,8 @@ margin-bottom: 40px;
 {
 border: solid 1px #ffffff;
 	display: inline-block;
-	width: 120px;
-	height: 40px;
+	width: 200px;
+	height: 30px;
 
 /*padding: 15px 10px;*/
 
@@ -226,7 +226,7 @@ border: solid 1px #ffffff;
 color: #000000;
 background: #ffffff;
 	display: inline-block;
-	width: 120px;
-	height: 40px;
+	width: 200px;
+	height: 30px;
 /*padding: 15px 80px;*/
 }
