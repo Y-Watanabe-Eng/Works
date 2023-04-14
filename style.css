@@ -161,56 +161,6 @@ padding: 0px 0px 0px;	/*上、左右、下への余白*/
 
 
 
-/*メニュー
----------------------------------------------------------------------------*/
-/*メニュー全体を囲むブロック*/
-#menubar
-{
-text-align: center;		/*文字をセンタリング*/
-font-size: 22px;		/*文字サイズ*/
-margin-bottom: 40px;	/*下に空けるスペース*/
-}
-
-/*メニュー１個あたりの設定*/
-#menubar li
-{
-display: block;	/*横並びにする設定*/
-margin: 40px 0px;
-}
-
-#menubar li span1
-{
-border: solid 1px #ffffff;
-padding: 20px 10px;
-}
-
-#menubar li span2
-{
-border: solid 1px #ffffff;
-color: #000000;
-background: #ffffff;
-padding: 15px 90px;
-}
-
-
-#menubar li a1
-{
-text-decoration: none;
-}
-
-#menubar li a2
-{
-text-decoration: none;
-color: #000000;
-}
-
-/*マウスオン時の設定*/
-#menubar li a:hover
-{
-color: #ea021c;
-}
-
-
 .link
 {
 text-align: center;
@@ -259,12 +209,11 @@ text-align: left;
 /*リンク
 ---------------------------------------------------------------------------*/
 
-
 a1
 {
 font-size: 16px;
 line-height: 4;
-padding: 5px 10px;
+padding: 0px 10px;
 width:80%;
 }
 
@@ -274,45 +223,4 @@ font-size: 16px;
 line-height: 4;
 padding: 5px 10px;
 width: 80%;
-}
-
-
-
-/*メニュー
----------------------------------------------------------------------------*/
-#menubar
-{
-font-size: 16px;
-line-height: 4;
-}
-
-
-/*メニュー１個あたりの設定*/
-#menubar li
-{
-text-align: left;
-display: block;	/*縦並びにする設定*/
-margin-bottom: 40px;
-}
-
-#menubar li span1
-{
-border: solid 1px #ffffff;
-	display: inline-block;
-	width: 80%;
-	height: 30px;
-
-/*padding: 15px 10px;*/
-
-}
-
-#menubar li span2
-{
-border: solid 1px #ffffff;
-color: #000000;
-background: #ffffff;
-	display: inline-block;
-	width: 80%;
-	height: 30px;
-/*padding: 15px 80px;*/
 }
