@@ -58,6 +58,7 @@ font-size: 22px;		/*文字サイズ*/
 border: solid 1px #ffffff;
 padding: 10px 10px;
 margin-bottom: 40px;	/*下に空けるスペース*/
+width:60%;
 }
 
 a1:hover
@@ -78,6 +79,7 @@ font-size: 22px;		/*文字サイズ*/
 border: solid 1px #ffffff;
 padding: 10px 10px;
 margin-bottom: 40px;	/*下に空けるスペース*/
+width:60%;
 }
 
 a2:hover
@@ -264,12 +266,16 @@ a1
 {
 font-size: 16px;
 line-height: 4;
+padding: 5px 10px;
+width:80%;
 }
 
 a2
 {
 font-size: 16px;
 line-height: 4;
+padding: 5px 10px;
+width: 80%;
 }
 
 
