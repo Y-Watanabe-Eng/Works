@@ -162,6 +162,12 @@ padding: 0px 0px 0px;	/*上、左右、下への余白*/
 }
 
 
+span
+{
+text-align: center;
+line-height: 2;
+}
+
 
 .link
 {
