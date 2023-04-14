@@ -124,6 +124,25 @@ border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば
 margin-bottom: 40px;	/*下に空けるスペース*/
 }
 
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+
+
+
+
 
 h1
 {
