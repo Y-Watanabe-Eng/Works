@@ -45,6 +45,7 @@ color: #ea021c;	/*マウスオン時の文字色*/
 
 a1
 {
+display: block;
 text-decoration: none;
 background: #000000;
 color: #ffffff;	/*リンクテキストの色*/
@@ -64,6 +65,7 @@ color: #ea021c;	/*マウスオン時の文字色*/
 
 a2
 {
+display: block;
 text-decoration: none;
 background: #ffffff;
 color: #000000;	/*リンクテキストの色*/
