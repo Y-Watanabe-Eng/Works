@@ -57,7 +57,7 @@ font-size: 22px;		/*文字サイズ*/
 line-height: 2;
 border: solid 1px #ffffff;
 padding: 10px 10px;
-margin-bottom: 40px;	/*下に空けるスペース*/
+margin:  0 auto;
 width:60%;
 }
 
@@ -79,7 +79,7 @@ font-size: 22px;		/*文字サイズ*/
 line-height: 2;
 border: solid 1px #ffffff;
 padding: 10px 10px;
-margin-bottom: 40px;	/*下に空けるスペース*/
+margin:  0 auto;
 width:60%;
 }
 
