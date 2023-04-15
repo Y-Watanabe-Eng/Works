@@ -122,18 +122,9 @@ padding: 0 3%;
 display: flex;
 }
 
-.content1
-{
-text-align: left;
-flex: 1;
-margin-right: 1px; /* 右側に1pxの余白を追加 */
-}
-
-.content2
+.content
 {
 text-align: right;
-flex: 60%;
-margin-left: 1px; /* 左側に1pxの余白を追加 */
 }
 
 
