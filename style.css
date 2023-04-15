@@ -59,7 +59,7 @@ background: #000000;
 color: #ffffff;	/*リンクテキストの色*/
 transition: 0.3s;	/*マウスオン時の移り変わるまでの時間設定。0.3秒。*/
 text-align: right;		/*文字をセンタリング*/
-width:50%;
+width:12%;
 padding: 0px 0px 0px;	/*上、左右、下への余白*/
 float: left;
 }
@@ -77,7 +77,7 @@ background: #000000;
 color: #ffffff;	/*リンクテキストの色*/
 transition: 0.3s;	/*マウスオン時の移り変わるまでの時間設定。0.3秒。*/
 text-align: right;		/*文字をセンタリング*/
-width:50%;
+width:12%;
 padding: 0px 0px 0px;	/*上、左右、下への余白*/
 }
 
