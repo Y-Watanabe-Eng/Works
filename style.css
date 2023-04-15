@@ -212,8 +212,9 @@ text-align: center;
 line-height: 2;
 }
 
-.box
+.box:nth-child(even)
 {
+text-align: right;
 background: #333333;
 padding: 1em;
 width:100%;
