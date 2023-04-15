@@ -135,6 +135,33 @@ margin: 0 auto;
 padding: 0 3%;
 }
 
+.wrapper
+{
+display: flex;
+}
+
+.content1
+{
+text-align: left;
+flex: 1; /* 半分の幅に */
+margin-right: 10px; /* 右側に10pxの余白を追加 */
+}
+
+.content2
+{
+text-align: left;
+flex: 1; /* 半分の幅に */
+margin-left: 10px; /* 左側に10pxの余白を追加 */
+}
+
+
+
+
+
+
+
+
+
 
 /*ヘッダー
 ---------------------------------------------------------------------------*/
