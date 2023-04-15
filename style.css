@@ -165,6 +165,7 @@ margin-bottom: 40px;	/*下に空けるスペース*/
 
 h1
 {
+display:inline;
 text-align: left;	/*内容を左よせ*/
 color: #ffffff;	/*全体の文字色*/
 font-size: 30px;	/*文字サイズ*/
