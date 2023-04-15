@@ -213,8 +213,14 @@ line-height: 2;
 background: #333333;
 padding: 1em;
 width:100%;
+display: flex;
+justify-content: space-between;
 }
 
+.box > div
+{
+width: 50%;
+}
 
 /*フッター設定
 ---------------------------------------------------------------------------*/
