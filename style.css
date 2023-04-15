@@ -149,7 +149,7 @@ margin-right: 10px; /* 右側に10pxの余白を追加 */
 
 .content2
 {
-text-align: left;
+text-align: right;
 flex: 1; /* 半分の幅に */
 margin-left: 10px; /* 左側に10pxの余白を追加 */
 }
