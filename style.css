@@ -145,9 +145,8 @@ max-width: 100%;
 height: auto;
 vertical-align: middle;
 text-align: center;
-margin-top: 20px;
 border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
-margin-bottom: 40px;	/*下に空けるスペース*/
+margin: 40px 0px;
 }
 
 
