@@ -37,8 +37,8 @@ code {
     margin: 0;
     display: block;
     font-family: monospace;
-    color: #333;
-    background-color: #f8f8f8;
+    color: #ffffff;
+    background-color: #333333;
     border: 1px solid #ccc;
     border-radius: 0.25em;
 }
