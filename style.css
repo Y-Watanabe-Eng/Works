@@ -31,18 +31,6 @@ border: solid 1px #cdb897;
 margin-bottom: 40px;
 }
 
-code {
-    white-space: pre-wrap;
-    padding: 1em;
-    margin: 0;
-    display: block;
-    font-family: monospace;
-    color: #ffffff;
-    background-color: #333333;
-    border: 1px solid #ccc;
-    border-radius: 0.25em;
-}
-
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -161,8 +149,10 @@ border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば
 margin: 40px 0px;
 }
 
-
-
+.svg
+{
+width: 100%;
+}
 
 
 h1
