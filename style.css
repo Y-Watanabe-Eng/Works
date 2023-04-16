@@ -207,15 +207,16 @@ line-height: 2;
 display: flex;
 flex-wrap: wrap;
 width: 100%;
+justify-content: space-between;
 }
 
 .box > div
 {
 background: #333333;
-flex-basis: 50%;
+flex-basis: calc(50% - 16px);
 padding: 16px;
 box-sizing: border-box;
-width: 50%;
+margin: 8px;
 }
 
 /*フッター設定
