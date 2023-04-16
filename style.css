@@ -206,7 +206,7 @@ line-height: 2;
 {
 display: flex;
 flex-wrap: wrap;
-width: 50%;
+width: 100%;
 }
 
 .box > div
