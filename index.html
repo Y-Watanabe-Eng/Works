@@ -39,7 +39,14 @@
 
 <hr>
 
-<img class="all" src="photo.jpg">
+<img id="all" src="photo.jpg" style="opacity:0; transform: translateY(10px);">
+<script>
+  const img = document.getElementById('all');
+  img.onload = () => {
+    img.style.opacity = 1;
+    img.style.transform = 'translateY(0px)';
+  }
+</script>
 
 <hr>
 
