@@ -214,6 +214,7 @@ width: 100%;
 background: #333333;
 flex-basis: 50%;
 padding: 1em;
+margin: 1em;
 box-sizing: border-box;
 width: 50%;
 }
