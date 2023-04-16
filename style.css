@@ -259,3 +259,12 @@ line-height: 3;
 padding: 0px 10px;
 width: 80%;
 }
+
+.box
+{
+flex-direction: column;
+}
+.box > div
+{
+width: 100%;
+}
