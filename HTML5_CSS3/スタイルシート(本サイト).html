@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Y.Watanabe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ポートフォリオサイト">
+<meta name="keywords" content="VBA,Python,プログラマ,エンジニア,コード">
+<link rel="shortcut icon" href="./ico/favicon.ico">
+<link rel="apple-touch-icon" href="./ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="./ico/android-chrome-192x192.png">
+<link rel="stylesheet" type="text/css" href="/Works/style.css">
+<link rel="stylesheet" href="/Works/prism.css">
+<script src="/Works/js/prism.js" defer></script>
+
+</head>
+
+
+<body>
+
+<div id="container">
+
+<header>
+
+<br/>
+<br/>
+<h1><a href="/Works/index.html" class="title">Y.Watanabe</a></h1>　ポートフォリオサイト
+
+<div class="content">
+<br/>
+<br/>
+<a href="/Works/index.html" class="menu">HOME</a>
+<a href="/Works/VBA.html" class="menu">VBA</a>
+<a href="/Works/HTML5_CSS3.html" class="menu">HTML5/CSS3</a>
+<a href="/Works/Python.html" class="menu">Python</a>
+</div>
+
+</header>
+
+<hr>
+
+<h2>HTML5/CSS3</h2>
+<p>＞スタイルシート(本サイト)</p>
+<br/>
+<br/>
+
+<p>本サイトのCSSソースコードです。</p>
+<br/>
+<br/>
+
+<pre>
+<code class="language-VBA">
+@charset "utf-8";
+
+
+/*PC・タブレット・スマホ(全端末)共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body
+{
+text-align: center;
+margin: 40px 0px 0px;
+padding: 0px;
+-webkit-text-size-adjust: 100%;
+color: #ffffff;
+font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+font-size: 16px;
+line-height: 0.5;
+background: #000000;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+ul
+{
+list-style-type: none;
+}
+
+hr
+{
+border: solid 1px #cdb897;
+margin-bottom: 40px;
+}
+
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a
+{
+text-decoration: none;
+transition: 0.3s;
+}
+
+a:hover
+{
+color: #ea021c;
+}
+
+.title
+{
+color: #ffffff;
+}
+
+.menu
+{
+text-decoration: none;
+background: #000000;
+color: #ffffff;
+transition: 0.3s;
+text-align: right;
+padding: 0px 5px;
+}
+
+.menu:hover
+{
+color: #ea021c;
+}
+
+.black
+{
+display:inline-block;
+text-decoration: none;
+background: #000000;
+color: #ffffff;
+transition: 0.3s;
+text-align: center;
+font-size: 22px;
+line-height: 2;
+border: solid 1px #ffffff;
+padding: 10px 10px;
+margin-bottom: 40px;
+width:60%;
+}
+
+.black:hover
+{
+color: #ea021c;
+}
+
+
+.white
+{
+display:inline-block;
+text-decoration: none;
+background: #ffffff;
+color: #000000;
+transition: 0.3s;
+text-align: center;
+font-size: 22px;
+line-height: 2;
+padding: 10px 10px;
+margin-bottom: 40px;
+width:60%;
+}
+
+.white:hover
+{
+color: #ea021c;
+}
+
+
+/*コンテナー（ホームページを囲む一番外側のブロック）
+---------------------------------------------------------------------------*/
+#container
+{
+max-width: 760px;
+margin: 0 auto;
+padding: 0 3%;
+}
+
+.content
+{
+text-align: right;
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+
+/*ヘッダー
+---------------------------------------------------------------------------*/
+/*headerブロック*/
+header
+{
+text-align: left;
+line-height: 0.5;
+}
+
+
+/*画像
+---------------------------------------------------------------------------*/
+#top
+{
+border: none;
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+text-align: center;
+border-radius: 10px;
+margin: 0px 0px 30px;
+}
+
+.svg
+{
+width: 95%;
+}
+
+
+/*文字
+---------------------------------------------------------------------------*/
+h1
+{
+display:inline;
+text-align: left;
+color: #ffffff;
+font-size: 34px;
+background: #000000;
+margin-top: 20px;
+}
+
+h2
+{
+text-align: left;
+color: #ffffff;
+font-size: 30px;
+background: #000000;
+}
+
+h3
+{
+text-align: left;
+color: #ffffff;
+font-size: 22px;
+background: #333333;
+}
+
+p
+{
+text-align: left;
+padding: 0px 0px 0px;
+}
+
+.subtitle
+{
+display:inline;
+text-align: left;
+padding: 0px 0px 0px;
+}
+
+span
+{
+text-align: center;
+line-height: 2;
+}
+
+.box
+{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-between;
+}
+
+.box > div
+{
+background: #333333;
+flex-basis: calc(50% - 16px);
+padding: 16px;
+box-sizing: border-box;
+margin: 8px;
+}
+
+/*フッター設定
+---------------------------------------------------------------------------*/
+footer
+{
+clear: both;
+text-align: center;
+padding: 30px 0px 10px;
+}
+
+
+
+/*画面幅580px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:580px){
+
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body
+{
+font-size: 12px;
+}
+
+
+/*リンク
+---------------------------------------------------------------------------*/
+.black
+{
+font-size: 16px;
+line-height: 3;
+padding: 0px 10px;
+width: 80%;
+}
+
+.white
+{
+font-size: 16px;
+line-height: 3;
+padding: 0px 10px;
+width: 80%;
+}
+
+.box
+{
+flex-direction: column;
+}
+.box > div
+{
+width: 100%;
+}
+</code>
+</pre>
+
+<footer>
+<small>Copyright&copy; Y.Watanabe All Rights Reserved.</small>
+</footer>
+
+</div>
+<!--/container-->
+
+</body>
+</html>
