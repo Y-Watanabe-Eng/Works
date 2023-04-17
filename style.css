@@ -18,6 +18,8 @@ font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリ
 font-size: 16px;
 line-height: 0.5;
 background: #000000;
+  animation-name: fade;
+  animation-duration: 3s;
 }
 
 ul
@@ -188,7 +190,6 @@ background: #000000;
 h3
 {
 text-align: left;
-margin-bottom: 20px;
 color: #ffffff;
 font-size: 22px;
 background: #333333;
