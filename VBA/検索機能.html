@@ -27,15 +27,15 @@
 
 <br/>
 <br/>
-<h1><a href="index.html" class="title">Y.Watanabe</a></h1>　ポートフォリオサイト
+<h1><a href="/Works/index.html" class="title">Y.Watanabe</a></h1>　ポートフォリオサイト
 
 <div class="content">
 <br/>
 <br/>
-<a href="index.html" class="menu">HOME</a>
-<a href="VBA.html" class="menu">VBA</a>
-<a href="HTML5_CSS3.html" class="menu">HTML5/CSS3</a>
-<a href="Python.html" class="menu">Python</a>
+<a href="/Works/index.html" class="menu">HOME</a>
+<a href="/Works/VBA.html" class="menu">VBA</a>
+<a href="/Works/HTML5_CSS3.html" class="menu">HTML5/CSS3</a>
+<a href="/Works/Python.html" class="menu">Python</a>
 </div>
 
 </header>
@@ -53,6 +53,58 @@
 <p>Enterキーでの検索機能に分かれています。</p>
 <br/>
 <br/>
+
+
+<pre>
+<code class="language-html">
+Sub CommandButton1_Click()
+'検索ボタン
+
+Dim Target As String
+Target = TextBox1.Text
+
+'テキストボックスの入力内容でA列を検索
+　ActiveSheet.Range("A9").AutoFilter _
+　　Field:=1,  _
+　　　Criteria1:="=*" & Target & "*"
+
+End Sub
+
+
+
+Sub CommandButton2_Click()
+'解除ボタン（テキストボックスクリア）
+
+'エラー（オートフィルタ解除状態で実行すると発生）を無視
+　On Error Resume Next
+
+'オートフィルタ解除
+　ActiveSheet.ShowAllData 
+
+'テキストボックスクリア
+　If TextBox1.Text <> "" Then
+
+　　TextBox1.Text = ""
+
+　End If
+
+End Sub
+
+
+
+Sub TextBox1_KeyDown(ByVal KeyCode As MSForms.ReturnInteget, ByVal Shift As Integer)
+'Enterキーで検索
+
+If KeyCode = 13 Then
+
+　Call CommandButton1_Click
+
+End If
+
+End Sub
+</code>
+</pre>
+
 
 <img class="svg" src="search.svg">
 
