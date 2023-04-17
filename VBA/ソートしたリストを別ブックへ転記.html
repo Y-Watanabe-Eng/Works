@@ -89,13 +89,13 @@ Else
 
 　Workbooks.Open "¥¥csysuf01¥共有フォルダ¥4_詳細分析¥" & fiscalYear & "年度¥インシデントチェック詳細分析" & Format(DateAdd("m", 0, Date), "yyyy") & Worksheets(”インシデントチェック集計”).Range("B1") & .xlsx"
 
+Eng If
+
 
 '転記先のブックを取得
 Dim updateBook As Workbook
 
 Set updateBook = ActiveWorkbook
-
-End If
 
 
 'オートフィルタを解除する
