@@ -148,7 +148,6 @@ border-radius: 10px;
 margin: 0px 0px 30px;
   animation-name: fade;
   animation-duration: 3s;
-  animation-iteration-count: 1;
 }
 
 @keyframes fade{
