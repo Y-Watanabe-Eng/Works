@@ -47,129 +47,95 @@
 <br/>
 <br/>
 
-<p>ソースコード掲載ページの一例として、</p>
-<p>VBAで作成した検索機能のページのHTMLコードです。</p>
+<p>ソースコード掲載ページのサンプルHTMLコードです。</p>
 <br/>
 <br/>
 
 <pre>
-<code class="language-VBA">
-<!DOCTYPE html>
-<html lang="ja">
+<code class="language-HTML">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
 
-<head>
+&lt;head&gt;
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Y.Watanabe</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ポートフォリオサイト">
-<meta name="keywords" content="VBA,Python,プログラマ,エンジニア,コード">
-<link rel="shortcut icon" href="./ico/favicon.ico">
-<link rel="apple-touch-icon" href="./ico/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="./ico/android-chrome-192x192.png">
-<link rel="stylesheet" type="text/css" href="/Works/style.css">
-<link rel="stylesheet" href="/Works/prism.css">
-<script src="/Works/js/prism.js" defer></script>
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;title&gt;Y.Watanabe&lt;/title&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;ポートフォリオサイト&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;VBA,Python,プログラマ,エンジニア,コード&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;./ico/favicon.ico&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;./ico/apple-touch-icon.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;./ico/android-chrome-192x192.png&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/Works/style.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/Works/prism.css&quot;&gt;
+&lt;script src=&quot;/Works/js/prism.js&quot; defer&gt;&lt;/script&gt;
 
-</head>
-
-
-<body>
-
-<div id="container">
-
-<header>
-
-<br/>
-<br/>
-<h1><a href="/Works/index.html" class="title">Y.Watanabe</a></h1>　ポートフォリオサイト
-
-<div class="content">
-<br/>
-<br/>
-<a href="/Works/index.html" class="menu">HOME</a>
-<a href="/Works/VBA.html" class="menu">VBA</a>
-<a href="/Works/HTML5_CSS3.html" class="menu">HTML5/CSS3</a>
-<a href="/Works/Python.html" class="menu">Python</a>
-</div>
-
-</header>
-
-<hr>
-
-<h2>Visual Basic</h2>
-<h2>for Applications</h2>
-<p>＞検索機能マクロ</p>
-<br/>
-<br/>
-
-<p>オートフィルタを使用した検索機能です。</p>
-<p>検索ボタン、オートフィルタ解除ボタン、</p>
-<p>Enterキーでの検索機能に分かれています。</p>
-<br/>
-<br/>
+&lt;/head&gt;
 
 
-<pre>
-<code class="language-VBA">
-Sub CommandButton1_Click()
-'検索ボタン
+&lt;body&gt;
 
-Dim Target As String
-Target = TextBox1.Text
+&lt;div id=&quot;container&quot;&gt;
 
-'テキストボックスの入力内容でA列を検索
-　ActiveSheet.Range("A9").AutoFilter _
-　　Field:=1,  _
-　　　Criteria1:="=*" & Target & "*"
+&lt;header&gt;
 
-End Sub
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1&gt;&lt;a href=&quot;/Works/index.html&quot; class=&quot;title&quot;&gt;タイトル;/a&gt;&lt;/h1&gt;　サブタイトル
 
+&lt;div class=&quot;content&quot;&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;/Works/index.html&quot; class=&quot;menu&quot;&gt;HOME&lt;/a&gt;
+&lt;a href=&quot;/Works/VBA.html&quot; class=&quot;menu&quot;&gt;VBA&lt;/a&gt;
+&lt;a href=&quot;/Works/HTML5_CSS3.html&quot; class=&quot;menu&quot;&gt;HTML5/CSS3&lt;/a&gt;
+&lt;a href=&quot;/Works/Python.html&quot; class=&quot;menu&quot;&gt;Python&lt;/a&gt;
+&lt;/div&gt;
 
+&lt;/header&gt;
 
-Sub CommandButton2_Click()
-'解除ボタン（テキストボックスクリア）
+&lt;hr&gt;
 
-'エラー（オートフィルタ解除状態で実行すると発生）を無視
-　On Error Resume Next
+&lt;h2&gt;HTML5/CSS3&lt;/h2&gt;
+&lt;p&gt;＞言語名&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
 
-'オートフィルタ解除
-　ActiveSheet.ShowAllData 
+&lt;p&gt;説明文&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
 
-'テキストボックスクリア
-　If TextBox1.Text <> "" Then
+&lt;pre&gt;
+&lt;code class=&quot;language-HTML&quot;&gt;
 
-　　TextBox1.Text = ""
+/*ここにコードを記載*/
 
-　End If
+&lt;/code&gt;
+&lt;/pre&gt;
 
-End Sub
+&lt;footer&gt;
+&lt;small&gt;Copyright&amp;copy; Y.Watanabe All Rights Reserved.&lt;/small&gt;
+&lt;/footer&gt;
 
+&lt;/div&gt;
+&lt;!--/container--&gt;
 
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/code&gt;
+&lt;/pre&gt;
 
-Sub TextBox1_KeyDown(ByVal KeyCode As MSForms.ReturnInteget, ByVal Shift As Integer)
-'Enterキーで検索
+&lt;footer&gt;
+&lt;small&gt;Copyright&amp;copy; Y.Watanabe All Rights Reserved.&lt;/small&gt;
+&lt;/footer&gt;
 
-If KeyCode = 13 Then
+&lt;/div&gt;
+&lt;!--/container--&gt;
 
-　Call CommandButton1_Click
+&lt;/body&gt;
+&lt;/html&gt;
 
-End If
-
-End Sub
-</code>
-</pre>
-
-<footer>
-<small>Copyright&copy; Y.Watanabe All Rights Reserved.</small>
-</footer>
-
-</div>
-<!--/container-->
-
-</body>
-</html>
 </code>
 </pre>
 
