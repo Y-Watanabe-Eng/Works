@@ -217,14 +217,14 @@ line-height: 2;
 {
 display: flex;
 flex-wrap: wrap;
-width: 100%;
+width: 96%;
 justify-content: space-between;
 }
 
 .box > div
 {
 background: #333333;
-flex-basis: calc(50% - 16px);
+flex-basis: calc(48% - 16px);
 padding: 16px;
 box-sizing: border-box;
 margin: 8px;
