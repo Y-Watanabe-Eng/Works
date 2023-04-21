@@ -82,11 +82,11 @@ Set sShell = CreateObject("Shell.Application")
 
 Dim sWindow As Object
 'Shell関数ですべてのフォルダに対してチェック
-  For Each sWindow In sShell.Windows
-    If (InStr(TypeName(sWindow.document), "IShellFolderView") > 0) Then
-      sWindow.Quit
-    End If
-  Next
+For Each sWindow In sShell.Windows
+  If (InStr(TypeName(sWindow.document), "IShellFolderView") > 0) Then
+    sWindow.Quit
+  End If
+Next
 
 
 
