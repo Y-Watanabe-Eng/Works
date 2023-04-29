@@ -81,6 +81,7 @@ Dim sShell As Object
 Set sShell = CreateObject("Shell.Application")
 
 Dim sWindow As Object
+
 'Shell関数ですべてのフォルダに対してチェック
 For Each sWindow In sShell.Windows
   If (InStr(TypeName(sWindow.document), "IShellFolderView") > 0) Then
@@ -89,6 +90,14 @@ For Each sWindow In sShell.Windows
 Next
 
 
+'IEを閉じる
+Dim IE As Object
+
+For Each IE In CreateObject("Shell.Application").Windows
+  If TypeName(IE.Document) = "HTMLDocument" Then
+    IE.Quit
+  End If
+Next
 
 
 'Excelを閉じる
