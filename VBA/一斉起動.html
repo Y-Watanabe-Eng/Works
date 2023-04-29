@@ -64,7 +64,7 @@
 
 <pre>
 <code class="language-VBA">
-Sub 朝の準備()
+Sub 一斉起動()
 
 '年度を取得
 Dim fiscalYear As String
@@ -83,14 +83,9 @@ CreateObject("WScript.Shell").Run "C:¥Users¥Test¥Desktop¥Sample1.lnk"
 
 CreateObject("WScript.Shell").Run "C:¥Users¥Test¥Desktop¥Sample2.url"
 
-CreateObject("WScript.Shell").Run "C:¥Users¥Test¥Desktop¥Sample3.lnk"
-
-CreateObject("WScript.Shell").Run "C:¥Users¥Test¥Desktop¥Sample4.lnk"
-
 
 Dim wordApp As Object
 Dim wordDoc As Word.Document
-
 
 'CreateObject関数でオブジェクトを作成し変数にセット
 Set wordApp = CreateObject("Word.Application") 
@@ -102,7 +97,7 @@ Set wordDoc = wordApp.Documents.Open("C:¥Users¥Test¥Desktop¥テンプレー�
 
 
 'Excelブックを開く
-Workbooks.Open "¥¥csysu01¥共有フォルダ¥6_チェックリスト¥" & fiscalYear & "¥インシデントチェック表" & Format(DateAdd("m", 0, Date), "yyyymm") & ".xlsx"
+Workbooks.Open "¥¥csysu01¥共有フォルダ¥06_チェックリスト¥" & fiscalYear & "¥インシデントチェック表" & Format(DateAdd("m", 0, Date), "yyyymm") & ".xlsx"
 Workbooks.Open "¥¥csysu01¥共有フォルダ¥05_FAQ¥インシデントデータベース.xlsx"
 
 
