@@ -34,7 +34,7 @@
 <br/>
 <a href="/Works/index.html" class="menu">HOME</a>
 <a href="/Works/VBA.html" class="menu">VBA</a>
-<a href="/Works/HTML5_CSS3.html" class="menu">HTML5/CSS3</a>
+<a href="/Works/HTML_CSS.html" class="menu">HTML/CSS</a>
 <a href="/Works/Python.html" class="menu">Python</a>
 </div>
 
@@ -52,19 +52,36 @@
 <hr>
 
 <h2>Python</h2>
-<p>＞私がベースを弾いているMV</p>
+<p>＞一斉起動(exe化)</p>
 <br/>
 <br/>
 
-<p>実行すると、私が過去にベースを弾いた曲の</p>
-<p>MVが開きます。（YouTube）</p>
+<p>＞コーディング時に使用するツールを起動する機能を、</p>
+<p>　Pyinstallerでexe化。</p>
 <br/>
 <br/>
 
 <pre>
 <code class="language-Python">
-import webbrowser #モジュールをインポート
-webbrowser.open('https://m.youtube.com/watch?v=Wv9ogYq3VLY&feature=youtu.be') #ブラウザでURLを開く
+import webbrowser
+import subprocess
+
+#ChatGPTを開く
+webbrowser.open('https://openai.com/blog/chatgpt')
+
+#サクラエディタを開く
+subprocess.Popen(r"C:\Program Files (x86)\sakura\sakura.exe")
+
+#VSCodeを開く
+subprocess.Popen(r"C:\Users\YOHEI\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+
+#Appフォルダを開く
+subprocess.Popen(['explorer', r"C:\Users\YOHEI\App"], shell=True)
+
+
+
+#exe化
+pyinstaller start.py --onefile --noconsole --icon=favicon.ico
 </code>
 </pre>
 
