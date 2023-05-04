@@ -85,8 +85,10 @@ if not os.path.exists(folder_path):
     #併せてサンプルテキストを作成
     text = open('./Start/sample.txt','w')
     #テキスト編集
-    text.write('ご利用ありがとうございます。\nStartフォルダを作成しましたので、\n起動したいファイル、ショートカット等を格納し、\n再度、Start.exeを実行してください。')
-    text.close()
+    text.write('ご利用ありがとうございます。\
+        \nStartフォルダを作成しましたので、\
+        \n起動したいファイル、ショートカット等を格納し、\
+        \n再度、Start.exeを実行してください。')text.close()
     #作成したフォルダを開く
     subprocess.Popen(['explorer', abs_folder_path], shell=True)
     #起動待ち
