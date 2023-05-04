@@ -56,7 +56,7 @@
 <br/>
 <br/>
 
-<p>コーディング時に使用するツールをまとめて起動する機能を、</p>
+<p>フォルダ内のアプリをまとめて起動する機能を、</p>
 <p>Pyinstallerでexe化。</p>
 <br/>
 <br/>
@@ -67,20 +67,40 @@
 
 <pre>
 <code class="language-Python">
-import webbrowser
+import os
+import winshell
 import subprocess
+from time import sleep
 
-#ChatGPTを開く
-webbrowser.open('https://openai.com/blog/chatgpt')
+#フォルダ指定
+folder_path = './Start'
 
-#サクラエディタを開く
-subprocess.Popen(r"C:\Program Files (x86)\sakura\sakura.exe")
+#相対パスを絶対パスに変換
+abs_folder_path = os.path.abspath(folder_path)
 
-#VSCodeを開く
-subprocess.Popen(r"C:\Users\YOHEI\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+#フォルダの有無をチェック
+if not os.path.exists(folder_path):
+    #フォルダがない場合は作成
+    os.makedirs(folder_path)
+    #併せてサンプルテキストを作成
+    text = open('./Start/sample.txt','w')
+    #テキスト編集
+    text.write('ご利用ありがとうございます。\nStartフォルダを作成しましたので、\n起動したいファイル、ショートカット等を格納し、\n再度、Start.exeを実行してください。')
+    text.close()
+    #作成したフォルダを開く
+    subprocess.Popen(['explorer', abs_folder_path], shell=True)
+    #起動待ち
+    sleep(1)
 
-#Appフォルダを開く
-subprocess.Popen(['explorer', r"C:\Users\YOHEI\App"], shell=True)
+#フォルダ内のファイルを取得
+files = [f for f in os.listdir(abs_folder_path)]
+
+#順番にファイルを開く
+for file in files:
+    file_path = os.path.join(abs_folder_path, file)
+    shortcut = winshell.shortcut(file_path)
+    shortcut_path = shortcut.path
+    os.startfile(shortcut_path)
 </code>
 </pre>
 
@@ -89,7 +109,7 @@ subprocess.Popen(['explorer', r"C:\Users\YOHEI\App"], shell=True)
 <pre>
 <code class="language-Python">
 #exe化
-pyinstaller coding_start.py --onefile --noconsole --icon=favicon.ico
+pyinstaller Start.py --onefile --noconsole --icon=Start.ico
 </code>
 </pre>
 
