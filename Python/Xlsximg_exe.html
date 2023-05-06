@@ -71,6 +71,8 @@
 <code class="language-Python">
 import sys
 import os
+import tkinter
+import tkinter.messagebox
 import win32com.client as win32
 import subprocess
 from time import sleep
@@ -83,55 +85,64 @@ filepath = sys.argv[1]
 
 #ファイル名と拡張子を取得
 filename = os.path.splitext(os.path.basename(filepath))[0]
-ext = os.path.splitext(filepath)
+ext = os.path.splitext(filepath)[1]
 
-#Excelに接続
-xl = win32.Dispatch("Excel.Application")
+if '.xlsx' != ext:
+    #拡張子が.xlsx以外はエラーメッセージ表示
+    tkinter.Tk().withdraw()
+    tkinter.messagebox.showwarning(title='エラー', message='このアプリは拡張子が".xlsx"のファイルのみをサポートしています。')
 
-#ブックを開く
-wb = xl.Workbooks.Open(filepath)
+else:
+    #Excelに接続
+    xl = win32.Dispatch("Excel.Application")
 
-#シートを指定
-ws = wb.Worksheets(1)
+    #ブックを開く
+    wb = xl.Workbooks.Open(filepath)
 
-#セル範囲を指定
-range = ws.UsedRange
+    #シートを指定
+    ws = wb.Worksheets(1)
 
-#指定した範囲をクリップボードにコピー
-range.Copy()
+    #セル範囲を指定
+    range = ws.UsedRange
 
-#ペイントを起動
-subprocess.Popen('mspaint')
+    #指定した範囲をクリップボードにコピー
+    range.Copy()
 
-#起動待機
-sleep(1)
+    #ペイントを起動
+    subprocess.Popen('mspaint')
 
-#ペースト⇒コピーで画像取得
-pyautogui.hotkey('ctrl', 'v')
-pyautogui.hotkey('ctrl', 'x')
+    #起動待機
+    sleep(1)
 
-#ペイントを閉じる
-pyautogui.hotkey('alt', 'f4')
-pyautogui.hotkey('n')
+    #ペースト⇒コピーで画像取得
+    pyautogui.hotkey('ctrl', 'v')
+    pyautogui.hotkey('ctrl', 'x')
 
-#Excelを閉じる
-wb.close
+    #ペイントを閉じる
+    pyautogui.hotkey('alt', 'f4')
+    pyautogui.hotkey('n')
 
-#クリップボードの内容を取得
-img = ImageGrab.grabclipboard()
+    #Excelを閉じる
+    wb.close
 
-#Excelコピー時に入った左端と上端の1pxの線をトリミング
-img = img.crop((1, 1, img.size[0], img.size[1]))
+    #クリップボードの内容を取得
+    img = ImageGrab.grabclipboard()
 
-#保存フォルダを作成
-if not os.path.exists('img'):
-    os.makedirs('img')
+    #Excelコピー時に入った左端と上端の1pxの線をトリミング
+    img = img.crop((1, 1, img.size[0], img.size[1]))
 
-#画像の保存先を指定
-savepath = './img/' + filename + '.png'
+    #保存フォルダを作成
+    if not os.path.exists('img'):
+        os.makedirs('img')
 
-#画像を保存
-img.save(savepath)
+    #画像の保存先を指定
+    savepath = './img/' + filename + '.png'
+
+    #デバッグ用
+    print(savepath)
+
+    #画像を保存
+    img.save(savepath)
 </code>
 </pre>
 
