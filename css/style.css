@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'CLEAT'; 
+  src: url('/yw-works/font/CLEAT.ttf') format('truetype');
+}
+
+
+
+/* フェードイン(初期値) */
+.fadeup {
+  opacity: 0; /* 最初は非表示 */
+  transform: translateY(40px); /* 下に40pxの位置から */
+  transition: opacity .8s, transform .8s; /* 透過率と縦方向の移動を0.8秒 */
+}
+
+.fadeup3 {
+  opacity: 0; /* 最初は非表示 */
+  transform: translateY(40px); /* 下に40pxの位置から */
+  transition: opacity .8s, transform .8s; /* 透過率と縦方向の移動を0.8秒 */
+}
+
+.fade {
+  opacity: 0; /* 最初は非表示 */
+  transition: opacity .8s; /* 透過率を0.8秒 */
+}
+
+
+/* フェードイン(スクロールした後) */
+.fadeup.is-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  transform: translateY(0); /* 40px上に移動する */
+  transition-delay: .1s; /* フェード開始を0.1秒遅らせる */
+}
+
+.fadeup3.is-inview3 {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  transform: translateY(0); /* 40px上に移動する */
+  transition-delay: .3s; /* フェード開始を0.1秒遅らせる */
+}
+
+
+.fade.fade-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  transition-delay: .3s; /* フェード開始を0.3秒遅らせる */
+}

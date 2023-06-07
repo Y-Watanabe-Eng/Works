@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Y.Watanabe｜Python｜Code</title>
+    <meta name="description" content="ポートフォリオサイト">
+    <meta name="keywords" content="VBA,Python,プログラマ,エンジニア,コード">
+    <link rel="shortcut icon" href="/yw-works/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="/yw-works/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/yw-works/ico/android-chrome-192x192.png">
+    <link rel="stylesheet" href="/yw-works/prism.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/yw-works/css/style.css">
+    <link href="/yw-works/css/prism.css" rel="stylesheet" />
+    
+</head>
+
+
+<body class="fade" style="background-color:#000000;">
+<div class="container">
+<div class="jumbotron"  style="background:url(/yw-works/img/top.jpg); background-size:cover; width: 100%; height: 220px;">
+<header>
+  <br/>
+            
+  <span class="h2 ps-4"><a href="/yw-works" class="text-decoration-none text-light" style="font-family: CLEAT">Y.W Works</a></span>
+  <br/>
+
+<div class="d-flex align-items-end mt-5 mb-3">
+
+<nav class="px-5 pt-5 pb-2 mt-3" style="--bs-breadcrumb-divider: '>';" aria-label="パンくずリスト">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a class="text-decoration-none text-light" style="font-family: CLEAT;" href="/yw-works">Top</a></li>
+  <li class="breadcrumb-item"><a class="text-decoration-none text-light" style="font-family: CLEAT;" href="/yw-works/Python">Python</a></li>
+  <li class="breadcrumb-item active text-info" style="font-family: CLEAT;" aria-current="page">SourceCode</li>
+  </ol>
+</nav>
+
+</div>
+
+</header>
+</div>
+</div>
+        
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y24BD0K2VY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y24BD0K2VY');
+</script>
+    
+<div class="container">
+
+<br/>
+
+<h2 class="text-center my-5 text-success">WEBスクレイピング</h2>
+
+<pre>
+  <code class="language-Python">
+  import requests
+  from bs4 import BeautifulSoup
+  import csv
+  
+  HEADER = ['タイトル', 'URL']
+  
+  #スクレイピング対象のWEBサイトを指定
+  res = requests.get('https://anime.eiga.com/program/')
+  
+  #指定したサイトのHTMLコードを取得
+  soup = BeautifulSoup(res.text, 'html.parser')
+  
+  #検索範囲を指定
+  Container = soup.find('div', class_='animeSeasonContainer')
+  
+  #pタグのseasonAnimeTtlクラスで囲まれた部位を検索
+  class_ttl = Container.find_all('p', class_='seasonAnimeTtl')
+  
+  #CSVファイルの準備
+  with open('now_anime.csv', 'w', encoding = 'utf-8') as f:
+      writer = csv.writer(f, lineterminator = '\n')
+      writer.writerow(HEADER)
+      
+      for anime in class_ttl:
+          #タイトルテキストを取得
+          ttl = anime.find('a').text
+          #作品URLを取得
+          url = anime.find('a').get('href')
+          #URLをフルパスに変換
+          full_url = 'https://anime.eiga.com' + url
+  
+          #CSVに書き出し
+          row = [ttl, full_url]
+          writer.writerow(row)
+          
+          #デバッグ用
+          print('*************************************************************************************')
+          print(ttl)
+          print(full_url)
+          print('')
+  </code>
+</pre>
+
+<br/>
+
+<footer class="border-top border-success">
+<p class="small text-center my-4 text-light">Copyright&copy; Y.Watanabe All Rights Reserved.</p>
+</footer>
+   
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/yw-works/js/jquery.inview.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="/yw-works/js/prism.js"></script>
+
+<script>
+
+// スクロールして表示領域に入ったらclass付与
+$(function () {
+  $(".fadeup").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+});
+
+$(function () {
+  $(".fade").on("inview", function () {
+    $(this).addClass("fade-inview");
+  });
+});
+
+</script>
+
+
+</html>
