@@ -230,46 +230,11 @@
 
 <script type="text/javascript" src="/Works/js/jquery.inview.min.js"></script>
 
+<script src="js/progressbar/progressbar.js"></script>
+
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-<script>
-$(function () {
-imagesProgress();
-function imagesProgress () {
-var container = $(‘#progress’),
-progressBar = container.find(‘.progress_bar’),
-progressText = container.find(‘.progress_text’),
-imgLoad = imagesLoaded(‘body’),
-imgTotal = imgLoad.images.length,
-imgLoaded = 0,
-current = 0,
-progressTimer = setInterval(updateProgress, 1000 / 60);
-imgLoad.on(‘progress’, function () {
-imgLoaded++;
-});
-function updateProgress () {
-var target = (imgLoaded / imgTotal) * 100;
-current += (target – current) * 0.1;
-progressBar.css({ width: current + ‘%’ });
-progressText.text(Math.floor(current) + ‘%’);
-if(current >= 100){
-clearInterval(progressTimer);
-container.addClass(‘progress_complete’);
-progressBar.add(progressText)
-.delay(500)
-.animate({ opacity: 0 }, 250, function () {
-container.animate({ top: ‘-100%’ }, 500);
-});
-}
-if (current > 99.9) {
-current = 100;
-}
-}
-}
-});
-</script>
 
 <script>
 // スクロールして表示領域に入ったらclass付与
