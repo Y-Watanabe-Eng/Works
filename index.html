@@ -19,71 +19,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/Works/css/style.css">
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-
-<script type="text/javascript" src="/Works/js/jquery.inview.min.js"></script>
-
-<script type='text/javascript' src="/Works/js/progressbar.js"></script>
-
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-<script>
-// スクロールして表示領域に入ったらclass付与
-$(function () {
-  $(".fadeup").on("inview", function () {
-    $(this).addClass("is-inview");
-  });
-});
-
-$(function () {
-  $(".fadeup3").on("inview", function () {
-    $(this).addClass("is-inview3");
-  });
-});
-
-$(function () {
-  $(".fade").on("inview", function () {
-    $(this).addClass("fade-inview");
-  });
-});
-</script>
-
-
-<script>
-var bar = new ProgressBar.Line(progress, {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'},
-  text: {
-	style: {
-	  // Text color.
-	  // Default: same as stroke color (options.color)
-	  color: '#999',
-	  position: 'absolute',
-	  right: '0',
-	  top: '30px',
-	  padding: 0,
-	  margin: 0,
-	  transform: null
-	},
-	autoStyleContainer: false
-  },
-  from: {color: '#FFEA82'},
-  to: {color: '#ED6A5A'},
-  step: (state, bar) => {
-	bar.setText(Math.round(bar.value() * 100) + ' %');
-  }
-});
-bar.animate(1.0);  // Number from 0.0 to 1.0
-</script>
-
-
 </head>
 
 
@@ -286,6 +221,72 @@ bar.animate(1.0);  // Number from 0.0 to 1.0
 <footer class="border-top border-success">
   <p class="small text-center my-4 text-light">Copyright&copy; Y.Watanabe All Rights Reserved.</p>
 </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="/Works/js/jquery.inview.min.js"></script>
+
+<script type='text/javascript' src="/Works/js/progressbar.js"></script>
+
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+// スクロールして表示領域に入ったらclass付与
+$(function () {
+  $(".fadeup").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+});
+
+$(function () {
+  $(".fadeup3").on("inview", function () {
+    $(this).addClass("is-inview3");
+  });
+});
+
+$(function () {
+  $(".fade").on("inview", function () {
+    $(this).addClass("fade-inview");
+  });
+});
+</script>
+
+
+<script>
+var bar = new ProgressBar.Line(progress, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+	style: {
+	  // Text color.
+	  // Default: same as stroke color (options.color)
+	  color: '#999',
+	  position: 'absolute',
+	  right: '0',
+	  top: '30px',
+	  padding: 0,
+	  margin: 0,
+	  transform: null
+	},
+	autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+	bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+bar.animate(1.0);  // Number from 0.0 to 1.0
+</script>
+
 
 </body>
 
