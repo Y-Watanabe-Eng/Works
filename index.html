@@ -52,40 +52,35 @@ $(function () {
 
 
 <script>
-$(function () {
-imagesProgress();
-function imagesProgress () {
-var container = $(‘#progress’),
-progressBar = container.find(‘.progress_bar’),
-progressText = container.find(‘.progress_text’),
-imgLoad = imagesLoaded(‘body’),
-imgTotal = imgLoad.images.length,
-imgLoaded = 0,
-current = 0,
-progressTimer = setInterval(updateProgress, 1000 / 60);
-imgLoad.on(‘progress’, function () {
-imgLoaded++;
+var bar = new ProgressBar.Line(container, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+	style: {
+	  // Text color.
+	  // Default: same as stroke color (options.color)
+	  color: '#999',
+	  position: 'absolute',
+	  right: '0',
+	  top: '30px',
+	  padding: 0,
+	  margin: 0,
+	  transform: null
+	},
+	autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+	bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
 });
-function updateProgress () {
-var target = (imgLoaded / imgTotal) * 100;
-current += (target – current) * 0.1;
-progressBar.css({ width: current + ‘%’ });
-progressText.text(Math.floor(current) + ‘%’);
-if(current >= 100){
-clearInterval(progressTimer);
-container.addClass(‘progress_complete’);
-progressBar.add(progressText)
-.delay(500)
-.animate({ opacity: 0 }, 250, function () {
-container.animate({ top: ‘-100%’ }, 500);
-});
-}
-if (current > 99.9) {
-current = 100;
-}
-}
-}
-});
+bar.animate(1.0);  // Number from 0.0 to 1.0
 </script>
 
 
@@ -94,12 +89,7 @@ current = 100;
 
 <body style="background-color:#000000;">
 
-
-<div class=”progress” id=”progress”>
-<span class=”progress_bar”></span>
-<span class=”progress_text”>0%</span>
-</div>
-
+<div id="container"></div>
 
 <div class="container fade">
 <div class="jumbotron"  style="background:url(/Works/img/top.jpg); background-size:cover; width: 100%; height: 220px;">
