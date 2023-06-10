@@ -71,7 +71,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: #000;
-  color: #fff;
+  color: #4db56a;
   font-size: 32px;
   display: flex;
   justify-content: center;
@@ -90,7 +90,7 @@ img {
 #bl_loadingGaugeMeter {
   width: 0;
   height: 3px;
-  background-color: #fff;
+  background-color: #4db56a;
   display: block;
 }
 
