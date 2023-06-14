@@ -82,9 +82,17 @@ spotify = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 songs2023=pd.read_csv('./csv/regional-jp-daily-2023-06-09.csv')
 songs2023.head()
 
+songs2022=pd.read_csv('./csv/regional-jp-daily-2022-06-09.csv')
+songs2022.head()
+
+songs2021=pd.read_csv('./csv/regional-jp-daily-2021-06-09.csv')
+songs2021.head()
+
 #空のデータフレームを作成
 song_info = pd.DataFrame()
 
+
+#2023
 #CSV内のuriカラムデータを変数uriへ
 for uri in songs2023['uri']:
 
@@ -109,6 +117,61 @@ merged_df_drop_columns = merged_df.drop(columns=columns_to_drop)
 
 # データフレームをCSVファイルに出力
 merged_df_drop_columns.to_csv(output_file, index=False, mode='w')
+
+
+#2022
+#CSV内のuriカラムデータを変数uriへ
+for uri in songs2022['uri']:
+
+	#uriをキーとしてデータフレームにaudio_features情報を格納
+	#これを変数dfへ
+	df = pd.DataFrame.from_dict(spotify.audio_features(uri))
+
+    # song_infoとdfを結合する
+	song_info = pd.concat([song_info, df], ignore_index=True)
+
+# songs2022とsong_infoを結合する
+merged_df = pd.concat([songs2022, song_info], axis=1)
+
+# 出力するCSVファイルのパスとファイル名を指定
+output_file = "./csv/20220609_top200_songdata.csv"
+
+# 除去するカラム名のリストを作成
+columns_to_drop = ['id', 'uri', 'track_href', 'analysis_url']
+
+# 特定のカラムを除去したデータフレームを作成
+merged_df_drop_columns = merged_df.drop(columns=columns_to_drop)
+
+# データフレームをCSVファイルに出力
+merged_df_drop_columns.to_csv(output_file, index=False, mode='w')
+
+
+#2021
+#CSV内のuriカラムデータを変数uriへ
+for uri in songs2021['uri']:
+
+	#uriをキーとしてデータフレームにaudio_features情報を格納
+	#これを変数dfへ
+	df = pd.DataFrame.from_dict(spotify.audio_features(uri))
+
+    # song_infoとdfを結合する
+	song_info = pd.concat([song_info, df], ignore_index=True)
+
+# songs2021とsong_infoを結合する
+merged_df = pd.concat([songs2021, song_info], axis=1)
+
+# 出力するCSVファイルのパスとファイル名を指定
+output_file = "./csv/20210609_top200_songdata.csv"
+
+# 除去するカラム名のリストを作成
+columns_to_drop = ['id', 'uri', 'track_href', 'analysis_url']
+
+# 特定のカラムを除去したデータフレームを作成
+merged_df_drop_columns = merged_df.drop(columns=columns_to_drop)
+
+# データフレームをCSVファイルに出力
+merged_df_drop_columns.to_csv(output_file, index=False, mode='w')
+
 
 print("CSVファイルが出力されました。")
   </code>
