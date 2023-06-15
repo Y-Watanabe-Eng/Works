@@ -64,13 +64,13 @@
 <br/>
 
 <h2 class="text-center my-5 text-success">データ分析<br/>※作成中※</h2>
-
+<p>データセット出力</p>
 <pre>
   <code class="language-Python">
 import spotipy
 import pandas as pd
 from spotipy.oauth2 import SpotifyClientCredentials
-import json
+
 
 client_id='b7b13bd7a57142a8b6341185f995e113'
 client_secret='a96d4d1c448148be8074722c9219aa0c'
@@ -91,6 +91,9 @@ songs2021.head()
 #空のデータフレームを作成
 song_info = pd.DataFrame()
 
+# 除去するカラム名のリストを作成
+columns_to_drop = ['type', 'id', 'uri', 'track_href', 'analysis_url']
+
 
 #2023
 #CSV内のuriカラムデータを変数uriへ
@@ -109,14 +112,18 @@ merged_df = pd.concat([songs2023, song_info], axis=1)
 # 出力するCSVファイルのパスとファイル名を指定
 output_file = "./csv/20230609_top200_songdata.csv"
 
-# 除去するカラム名のリストを作成
-columns_to_drop = ['id', 'uri', 'track_href', 'analysis_url']
-
 # 特定のカラムを除去したデータフレームを作成
-merged_df_drop_columns = merged_df.drop(columns=columns_to_drop)
+merged_df_2023 = merged_df.drop(columns=columns_to_drop)
 
 # データフレームをCSVファイルに出力
-merged_df_drop_columns.to_csv(output_file, index=False, mode='w')
+merged_df_2023.to_csv(output_file, index=False, encoding='utf_8_sig', mode='w')
+
+print('2023OK!')
+
+
+df = df.drop(df.index)
+song_info = song_info.drop(song_info.index)
+merged_df = merged_df.drop(merged_df.index)
 
 
 #2022
@@ -136,14 +143,18 @@ merged_df = pd.concat([songs2022, song_info], axis=1)
 # 出力するCSVファイルのパスとファイル名を指定
 output_file = "./csv/20220609_top200_songdata.csv"
 
-# 除去するカラム名のリストを作成
-columns_to_drop = ['id', 'uri', 'track_href', 'analysis_url']
-
 # 特定のカラムを除去したデータフレームを作成
-merged_df_drop_columns = merged_df.drop(columns=columns_to_drop)
+merged_df_2022 = merged_df.drop(columns=columns_to_drop)
 
 # データフレームをCSVファイルに出力
-merged_df_drop_columns.to_csv(output_file, index=False, mode='w')
+merged_df_2022.to_csv(output_file, index=False, encoding='utf_8_sig', mode='w')
+
+print('2022OK!')
+
+
+df = df.drop(df.index)
+song_info = song_info.drop(song_info.index)
+merged_df = merged_df.drop(merged_df.index)
 
 
 #2021
@@ -163,20 +174,69 @@ merged_df = pd.concat([songs2021, song_info], axis=1)
 # 出力するCSVファイルのパスとファイル名を指定
 output_file = "./csv/20210609_top200_songdata.csv"
 
-# 除去するカラム名のリストを作成
-columns_to_drop = ['id', 'uri', 'track_href', 'analysis_url']
-
 # 特定のカラムを除去したデータフレームを作成
-merged_df_drop_columns = merged_df.drop(columns=columns_to_drop)
+merged_df_2021 = merged_df.drop(columns=columns_to_drop)
 
 # データフレームをCSVファイルに出力
-merged_df_drop_columns.to_csv(output_file, index=False, mode='w')
+merged_df_2021.to_csv(output_file, index=False, encoding='utf_8_sig', mode='w')
+
+print('2021OK!')
 
 
 print("CSVファイルが出力されました。")
   </code>
 </pre>
 
+	
+	
+<p>平均値集計</p>
+<pre>
+  <code class="language-Python">
+import pandas as pd
+
+top200_20230609_df = pd.read_csv('./csv/20230609_top200_songdata.csv')
+top200_20230609_df.head()
+
+top200_20220609_df = pd.read_csv('./csv/20220609_top200_songdata.csv')
+top200_20220609_df.head()
+
+top200_20210609_df = pd.read_csv('./csv/20210609_top200_songdata.csv')
+top200_20210609_df.head()
+
+
+ave_2023 = top200_20230609_df[[
+    'streams', 'tempo', 'energy', 'loudness', 'liveness', 'danceability', 'acousticness', 'instrumentalness'
+    ]].mean()
+
+ave_2022 = top200_20220609_df[[
+    'streams', 'tempo', 'energy', 'loudness', 'liveness', 'danceability', 'acousticness', 'instrumentalness'
+    ]].mean()
+
+ave_2021 = top200_20210609_df[[
+    'streams', 'tempo', 'energy', 'loudness', 'liveness', 'danceability', 'acousticness','instrumentalness'
+    ]].mean()
+
+
+ave_df = pd.DataFrame(
+    [ave_2023, ave_2022, ave_2021],
+    index = ['2023', '2022', '2021']
+)
+
+
+columns_name = [
+    '平均再生数', 'BPM', 'ラウド感', 'dB値', 'ライブ感', 'ダンス感', 'アコースティック感', 'インストゥルメンタル度'
+    ]
+
+ave_df = ave_df.rename(columns=dict(zip(ave_df.columns, columns_name)))
+
+print(ave_df)
+
+ave_df.to_csv('./csv/streams_ave.csv', index=True, encoding='utf_8_sig', mode='w')
+  </code>
+</pre>
+
+	
+	
 <br/>
 
 <footer class="border-top border-success">
