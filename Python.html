@@ -90,14 +90,14 @@
   <li class="text-light">APPサーバ:Gunicorn:20.1.0</li>
   <li class="text-light">DB:PostgreSQL:14.8</li>
 
-  <br/>
+<br/>
 
 <div class="d-flex justify-content-center my-3">
   <button type="button" class="btn btn-outline-success" onclick="location.href='http://yw-app.net/'">MiniMemo</button>
 </div>
 
 <div class="text-light">
-  <br/>
+<br/>
 
 </div>
 
@@ -113,7 +113,8 @@
 
   <p class="text-light">分析対象</p>
   <li class="text-light">Spotify API
-  <br/>　過去5年間における<br/>　6月9日の視聴回数TOP200</li>
+  <br/>　過去5年間における
+  <br/>　6月9日の視聴回数TOP200</li>
   <br/>
 
   <p class="text-light">分析内容</p>
@@ -143,9 +144,41 @@
     
 </div>
 
-  <br/>
+<br/>
 
 <div class="row justify-content-center">
+
+<div class="col-8 col-sm-5 fadeup">
+
+<h2 class="text-center mt-5 mb-4 text-success">データ取得の定期実行</h2>
+
+<br/>
+
+<p class="text-light">取得データ</p>
+<li class="text-light">Spotify API
+<br/>　DailyチャートTop50（日本）の
+<br/>　楽曲データを毎日取得</li>
+<br/>
+
+<p class="text-light">実行環境</p>
+<li class="text-light">Python:3.10.6</li>
+<li class="text-light">Pandas:2.0.2</li>
+<li class="text-light">Spotipy:2.23.0</li>
+<li class="text-light">仮想サーバ:AWS EC2</li>
+<li class="text-light">サーバOS:Ubuntu:20.04</li>
+<li class="text-light">crontabによる定期実行</li>
+
+<br/>
+
+<div class="d-flex justify-content-center my-3">
+<a href="/Works/Python/crontab" class="btn btn-outline-success" role="button">ソースコード</a>
+</div>
+
+</div>
+
+<br/>
+
+  
 
 <div class="col-8 col-sm-5 fadeup3">
 
@@ -174,8 +207,10 @@
 
 </div>
 
-  <br/>
+<br/>
 
+
+<div class="row justify-content-center">   
 
 <div class="col-8 col-sm-5 fadeup">
 
@@ -209,10 +244,8 @@
 </div>
 
 <br/>
+  
 
-    
-<div class="row justify-content-center">   
- 
 <div class="col-8 col-sm-5 fadeup3">
 
 <h2 class="text-center mt-5 mb-4 text-success">一斉起動</h2>
