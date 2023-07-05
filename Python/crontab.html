@@ -61,7 +61,7 @@
     
 <div class="container">
 
-<h2 class="text-center my-5 text-success">データ取得定期実行</h2>
+<h2 class="text-center my-5 text-success">データ取得の定期実行</h2>
 
 <pre>
   <code class="language-Python">
@@ -71,8 +71,8 @@ import pandas as pd
 import datetime
 
 
-client_id='b7b13bd7a57142a8b6341185f995e113'
-client_secret='a96d4d1c448148be8074722c9219aa0c'
+client_id='********************************'
+client_secret='********************************'
 client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(client_id, client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
