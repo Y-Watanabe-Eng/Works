@@ -11,9 +11,9 @@ export const Header = () => {
                     <h1 className='text-4xl sm:text-5xl font-CLEAT hover:text-green-800'><Link to="/WorksTest/">Y.W Works</Link></h1>
                 </div>
                 <ul className='nav-links'>
-                    <li><Link className='text-lg hover:text-green-800' to="/WorksTest/">PORTFOLIO</Link></li>
-                    <li><Link className='text-lg hover:text-green-800' to="/WorksTest/Skill">SKILL</Link></li>
-                    <li><Link className='text-lg hover:text-green-800' to="/WorksTest/Profile">PROFILE</Link></li>
+                    <li><Link className='text-lg hover:text-green-800' to="/Works/">PORTFOLIO</Link></li>
+                    <li><Link className='text-lg hover:text-green-800' to="/Works/Skill">SKILL</Link></li>
+                    <li><Link className='text-lg hover:text-green-800' to="/Works/Profile">PROFILE</Link></li>
                 </ul>
 
             </nav>

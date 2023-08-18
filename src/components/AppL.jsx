@@ -16,7 +16,7 @@ export const AppL = () => {
         >LINK</a>
         <Link  
         className='w-20 m-3 text-base bg-black hover:bg-gray-800 text-white py-2 border border-green-800 rounded shadow'
-        to="/WorksTest/MiniMemo"
+        to="/Works/MiniMemo"
         >DETAIL</Link>
       </div>
     </div>

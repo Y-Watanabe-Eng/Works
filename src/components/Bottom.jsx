@@ -8,9 +8,9 @@ export const Bottom = () => {
         <nav>
 
             <ul className='bottom-nav'>
-                <li><Link className='text-sm text-white hover:text-green-800' to="/WorksTest/">PORTFOLIO</Link></li>
-                <li><Link className='text-sm text-white hover:text-green-800' to="/WorksTest/Skill">SKILL</Link></li>
-                <li><Link className='text-sm text-white hover:text-green-800' to="/WorksTest/Profile">　PROFILE</Link></li>
+                <li><Link className='text-sm text-white hover:text-green-800' to="/Works/">PORTFOLIO</Link></li>
+                <li><Link className='text-sm text-white hover:text-green-800' to="/Works/Skill">SKILL</Link></li>
+                <li><Link className='text-sm text-white hover:text-green-800' to="/Works/Profile">　PROFILE</Link></li>
             </ul>
 
         </nav>
