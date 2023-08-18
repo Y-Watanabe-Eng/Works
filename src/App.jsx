@@ -19,11 +19,11 @@ export const App = () => {
         <Header />
 
         <Routes>
-          <Route path='/WorksTest/' element={<Dev />} />
-          <Route path='/WorksTest/Skill' element={<Skill />} />
-          <Route path='/WorksTest/Profile' element={<Profile />} />
-          <Route path='/WorksTest/MiniMemo' element={<MiniMemo />} />
-          <Route path='/WorksTest/Tobaccost' element={<Tobaccost />} />
+          <Route path='/Works/' element={<Dev />} />
+          <Route path='/Works/Skill' element={<Skill />} />
+          <Route path='/Works/Profile' element={<Profile />} />
+          <Route path='/Works/MiniMemo' element={<MiniMemo />} />
+          <Route path='/Works/Tobaccost' element={<Tobaccost />} />
         </Routes>
 
         <Footer />
