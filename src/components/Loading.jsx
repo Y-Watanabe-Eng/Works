@@ -8,7 +8,7 @@ export const Loading = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <h4 className='text-3xl text-white font-CLEAT'>Now Loading...</h4>
+                <h4 className='text-xl text-white font-CLEAT'>Now Loading...</h4>
             </div>
         </div>
     )
