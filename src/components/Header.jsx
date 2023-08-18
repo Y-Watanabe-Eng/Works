@@ -8,7 +8,7 @@ export const Header = () => {
             <nav>
                 
                 <div>
-                    <h1 className='text-4xl sm:text-5xl font-CLEAT hover:text-green-800'><Link to="/WorksTest/">Y.W Works</Link></h1>
+                    <h1 className='text-4xl sm:text-5xl font-CLEAT hover:text-green-800'><Link to="/Works/">Y.W Works</Link></h1>
                 </div>
                 <ul className='nav-links'>
                     <li><Link className='text-lg hover:text-green-800' to="/Works/">PORTFOLIO</Link></li>

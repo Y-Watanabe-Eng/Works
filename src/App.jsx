@@ -1,4 +1,5 @@
 import './style.css'
+import {Loading} from "./components/Loading";
 import {Header} from "./components/Header";
 import {Dev} from "./components/Dev";
 import {Skill} from "./components/Skill";
@@ -16,6 +17,8 @@ export const App = () => {
     <Router>
       <div className="container">
 
+        <Loading />
+
         <Header />
 
         <Routes>
@@ -29,6 +32,7 @@ export const App = () => {
         <Footer />
 
         <Bottom />
+
       </div>
     </Router>
   )

@@ -11,6 +11,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+    <script>
+      window.onload = function() {
+        setTimeout(() => {
+          const loading = document.querySelector(".loading")
+          loading.classList.add("loaded")
+        }, 1300)
+      };
+    </script>
+
   </body>
 </html>
 
