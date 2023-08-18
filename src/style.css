@@ -114,7 +114,7 @@ main {
 }
 
 .icon {
-    width: 50%;
+    width: 45%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -160,21 +160,6 @@ main {
 .detail img {
     width: 70%;
     margin: 0 auto 30px;
-}
-
-.more {
-    color: #ffffff;
-    min-height: calc(100vh - 190px);
-    padding-top: 100px;
-}
-
-.more-body {
-    margin: 0 auto;
-    width: 90%;
-}
-
-.more img {
-    width: 15%;
 }
 
 footer {
