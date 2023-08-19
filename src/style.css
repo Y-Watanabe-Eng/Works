@@ -86,7 +86,7 @@ code {
 .loader span:nth-child(4) {
     animation-direction: reverse;    
     animation-delay: 4s;
-    border-radius: 50% 50% 42% 58% / 57% 86% 14% 43%;
+    border-radius: 51% 49% 25% 75% / 30% 66% 34% 70%;
 }
 
 @keyframes animate {
