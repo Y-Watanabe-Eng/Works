@@ -278,6 +278,11 @@ h3 {
         width: 90%;
     }
 
+    .loader {
+        width: 250px;
+        height: 250px;
+    }
+
     .nav-links {
         display: none;
     }
