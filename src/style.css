@@ -83,6 +83,12 @@ code {
     border-radius: 50% 50% 42% 58% / 57% 86% 14% 43%;
 }
 
+.loader span:nth-child(3) {
+    animation-direction: reverse;    
+    animation-delay: 4s;
+    border-radius: 50% 50% 42% 58% / 57% 86% 14% 43%;
+}
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
