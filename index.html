@@ -9,14 +9,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y24BD0K2VY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y24BD0K2VY');
+    </script>
+
+<!--本体-->
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
+
+<!--フェード-->
+    <script>
+      document.querySelector(".skill").animate(
+        [
+          { opacity: 0 },
+          {opacity: 1 }
+        ],
+        {
+          duration: 3000,
+          fill: "forwards"
+        }
+      )
+    </script>
+
+<!--ローディング--> 
     <script>
       window.onload = function() {
         setTimeout(() => {
           const loading = document.querySelector(".loading")
           loading.classList.add("loaded")
-        }, 1400)
+        }, 1600)
       };
     </script>
 
