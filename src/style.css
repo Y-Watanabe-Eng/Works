@@ -114,14 +114,14 @@ header {
     right: 0;
 }
 
-header nav {
+nav {
     padding-top: 20px;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
 }
 
-header nav h3 {
+nav h3 {
     float: left;
     padding-left:30px;
 }
