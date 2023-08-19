@@ -84,8 +84,7 @@ code {
 }
 
 .loader span:nth-child(4) {
-    animation-direction: reverse;    
-    animation-delay: 3s;
+    animation-direction: reverse;
     border-radius: 51% 49% 25% 75% / 30% 66% 34% 70%;
 }
 
