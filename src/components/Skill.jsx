@@ -13,12 +13,16 @@ import VSCode from "/icon/visual-studio-code.svg";
 import Github from "/icon/github-icon.svg";
 import PostgreSQL from "/icon/postgresql.svg";
 import Ubuntu from "/icon/ubuntu.svg";
-
+import { motion } from "framer-motion";
 
 export const Skill = () => {
 
     return(
-        <div className='skill'>
+        <motion.div className='skill'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4}}
+        >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>SKILL</h2>
             <h2 className='text-xl sm:text-2xl pt-6'>TECHNICAL SKILL</h2>
             <div className='py-8'>
@@ -145,6 +149,6 @@ export const Skill = () => {
                     グループ内での業務分担、スケジュールの管理を行う。
                 </p>
             </div>
-        </div>
+        </motion.div>
     )
 }

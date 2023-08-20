@@ -3,10 +3,16 @@ import New from "/img/MiniMemo/MiniMemo-New.png";
 import Load from "/img/MiniMemo/MiniMemo-Load.png";
 import Login from "/img/MiniMemo/MiniMemo-Login.png";
 import Signup from "/img/MiniMemo/MiniMemo-Signup.png";
+import { motion } from "framer-motion";
+
 
 export const MiniMemo = () => {
   return (
-    <div className='detail'>
+    <motion.div className='detail'
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.8, delay: 0.4}}
+    >
       <h2 className='text-2xl sm:text-4xl'>MiniMemo</h2>
       <div>
         <div className="grid sm:grid-cols-2 py-10 detail-body">
@@ -88,6 +94,6 @@ export const MiniMemo = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

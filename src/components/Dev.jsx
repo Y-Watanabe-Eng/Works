@@ -2,13 +2,16 @@ import '../style.css'
 import {AppL} from './AppL'
 import {AppR} from './AppR'
 import Github from "/icon/github-icon.svg";
-
-
+import { motion } from "framer-motion";
 
 export const Dev = () => {
 
     return(
-        <div className='dev'>
+        <motion.div className='dev'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4}}
+        >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>PORTFOLIO</h2>
             <div className="grid sm:grid-cols-2">
                 <AppL />
@@ -21,7 +24,7 @@ export const Dev = () => {
                 target='_blanc'
                 ><img src={Github} alt="Github" />More...</a>
             </div>
-        </div>
+        </motion.div>
 
     )
 }

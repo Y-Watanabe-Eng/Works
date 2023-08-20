@@ -1,9 +1,15 @@
 import '../style.css'
 import Tobaccostimg from '/img/Tobaccost.png'
+import { motion } from "framer-motion";
+
 
 export const Tobaccost = () => {
   return (
-    <div className='detail'>
+    <motion.div className='detail'
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.8, delay: 0.4}}
+    >
       <h2 className='text-2xl sm:text-4xl'>Tobaccost</h2>
       <div>
         <div className="grid sm:grid-cols-2 py-10 detail-body">
@@ -54,6 +60,6 @@ export const Tobaccost = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

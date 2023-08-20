@@ -1,10 +1,15 @@
 import '../style.css'
 import yw from "/img/works-c.jpg";
+import { motion } from "framer-motion";
 
 export const Profile = () => {
 
     return(
-        <div className='profile'>
+        <motion.div className='profile'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4}}
+        >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>PROFILE</h2>
             <div className="grid md:grid-cols-2">
                 <div className='flex items-center'>
@@ -21,6 +26,6 @@ export const Profile = () => {
                 <p className='text-base'>音楽と買い物、あとYoutubeが娯楽です。</p>
             </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
