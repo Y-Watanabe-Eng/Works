@@ -229,6 +229,14 @@ footer {
     padding-top: 40px;
 }
 
+.bottom {
+    display: none;
+}
+
+.bottom-nav {
+    display: none;
+}
+
 
 /*文字*/
 
@@ -253,14 +261,6 @@ h3 {
     font-size: small;
 }
 
-.bottom {
-    display: none;
-}
-
-.bottom-nav {
-    display: none;
-}
-
 
 @font-face {
     font-family: 'CLEAT'; 
@@ -277,7 +277,7 @@ h3 {
 }
 
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:767px) {
 
     .container {
         width: 90%;

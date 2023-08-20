@@ -6,7 +6,7 @@ export const Profile = () => {
     return(
         <div className='profile'>
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>PROFILE</h2>
-            <div className="grid sm:grid-cols-2">
+            <div className="grid md:grid-cols-2">
                 <div className='flex items-center'>
                     <img className='rounded-lg' src={yw} alt="yw" />
                 </div>

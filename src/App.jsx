@@ -8,8 +8,7 @@ import {MiniMemo} from "./components/MiniMemo";
 import {Tobaccost} from "./components/Tobaccost";
 import {Footer} from "./components/Footer";
 import {Bottom} from "./components/Bottom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
 
 export const App = () => {
 
