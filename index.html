@@ -29,7 +29,7 @@
       document.querySelector(".skill").animate(
         [
           { opacity: 0 },
-          {opacity: 1 }
+          { opacity: 1 }
         ],
         {
           duration: 3000,
@@ -44,9 +44,15 @@
         setTimeout(() => {
           const loading = document.querySelector(".loading")
           loading.classList.add("loaded")
+
+          const slide = document.querySelector(".slide")
+          slide.style.transform="translateY(0)";
         }, 1600)
       };
     </script>
+
+    <!--スライドイン-->
+
 
   </body>
 </html>

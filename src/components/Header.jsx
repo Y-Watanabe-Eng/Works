@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export const Header = () => {
 
     return(
-        <header className='border-b-2 border-green-800'>
+        <header className='border-b-2 border-green-800 slide'>
             <nav>
                 
                 <div>
@@ -17,8 +17,6 @@ export const Header = () => {
                 </ul>
 
             </nav>
-
-
         </header>
     )
 }

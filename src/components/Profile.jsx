@@ -8,7 +8,7 @@ export const Profile = () => {
         <motion.div className='profile'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.4}}
+        transition={{ duration: 0.4, delay: 0.4  }}
         >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>PROFILE</h2>
             <div className="grid md:grid-cols-2">

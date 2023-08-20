@@ -66,7 +66,7 @@ code {
 
 .loader span {
     position: absolute;
-    border: 2px solid green;
+    border: 2px solid purple;
     width: 100%;
     height: 100%;
     border-radius: 76% 24% 23% 77% / 36% 28% 72% 64%;
@@ -74,16 +74,19 @@ code {
 }
 
 .loader span:nth-child(2) {
+    border: 2px solid green;
     animation-direction: reverse;
     border-radius: 69% 31% 70% 30% / 38% 52% 48% 62%;
 }
 
 .loader span:nth-child(3) {
+    border: 2px solid green;
     animation-delay: 4s;
     border-radius: 50% 50% 42% 58% / 57% 86% 14% 43%;
 }
 
 .loader span:nth-child(4) {
+    border: 2px solid purple;
     animation-direction: reverse;
     border-radius: 51% 49% 25% 75% / 30% 66% 34% 70%;
 }
@@ -114,6 +117,15 @@ header {
     right: 0;
 }
 
+.slide {
+    transform: translateY(-90px); /* 上に90pxの位置から */
+    transition: transform 0.8s;
+}
+
+.slided {
+    transform: translateY(0); /* 90px下に移動する */
+}
+
 nav {
     padding-top: 20px;
     display: flex;
@@ -131,13 +143,6 @@ nav h3 {
     justify-content: space-around;
     width: 30%;
     transition: all 0.5s ease-in-out;
-}
-
-
-main {
-    color: #ffffff;
-    min-height: calc(100vh - 190px);
-    padding-top: 100px;
 }
 
 .dev {

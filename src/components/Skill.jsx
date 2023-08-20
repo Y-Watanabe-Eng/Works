@@ -21,7 +21,7 @@ export const Skill = () => {
         <motion.div className='skill'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.4}}
+        transition={{ duration: 0.4, delay: 0.4 }}
         >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>SKILL</h2>
             <h2 className='text-xl sm:text-2xl pt-6'>TECHNICAL SKILL</h2>

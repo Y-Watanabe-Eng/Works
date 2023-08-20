@@ -8,7 +8,7 @@ export const Tobaccost = () => {
     <motion.div className='detail'
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ duration: 0.8, delay: 0.4}}
+    transition={{ duration: 0.4, delay: 0.4 }}
     >
       <h2 className='text-2xl sm:text-4xl'>Tobaccost</h2>
       <div>
