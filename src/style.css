@@ -117,15 +117,6 @@ header {
     right: 0;
 }
 
-.slide {
-    transform: translateY(-90px); /* 上に90pxの位置から */
-    transition: transform 0.8s;
-}
-
-.slided {
-    transform: translateY(0); /* 90px下に移動する */
-}
-
 nav {
     padding-top: 20px;
     display: flex;
@@ -240,6 +231,22 @@ footer {
 
 .bottom-nav {
     display: none;
+}
+
+
+/*ローディング*/
+.slideh {
+    transform: translateY(-90px); /* 上に90pxの位置から */
+    transition: transform 0.8s;
+}
+
+.slideb {
+    transform: translateY(90px); /* 上に90pxの位置から */
+    transition: transform 0.8s;
+}
+
+.slided {
+    transform: translateY(0); 
 }
 
 

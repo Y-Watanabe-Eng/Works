@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 export const Bottom = () => {
   return (
-    <div className='bottom'>
+    <div className='bottom slideb'>
         <nav>
 
             <ul className='bottom-nav grid-cols-3'>

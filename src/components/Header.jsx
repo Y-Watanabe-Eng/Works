@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export const Header = () => {
 
     return(
-        <header className='border-b-2 border-green-800 slide'>
+        <header className='border-b-2 border-green-800 slideh'>
             <nav>
                 
                 <div>
