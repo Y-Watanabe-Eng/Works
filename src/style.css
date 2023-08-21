@@ -32,7 +32,6 @@ code {
 .works-bg {
     margin: 0;
     padding: 0;
-
 }
 
 .loading {
@@ -133,7 +132,8 @@ nav h3 {
     display: flex;
     justify-content: space-around;
     width: 30%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .dev {
@@ -237,12 +237,16 @@ footer {
 /*ローディング*/
 .slideh {
     transform: translateY(-90px); /* 上に90pxの位置から */
-    transition: transform 0.8s;
+    transition: transform 0..6s;
+    transition-delay: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 
 .slideb {
     transform: translateY(90px); /* 上に90pxの位置から */
-    transition: transform 0.8s;
+    transition: transform 0.6s;
+    transition-delay: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 
 .slided {
