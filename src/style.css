@@ -80,8 +80,8 @@ code {
 
 .loader span:nth-child(3) {
     border: 2px solid green;
-    animation-delay: 4s;
     border-radius: 50% 50% 42% 58% / 57% 86% 14% 43%;
+    animation: animate 6s linear infinite;
 }
 
 .loader span:nth-child(4) {
