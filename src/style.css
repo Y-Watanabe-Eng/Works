@@ -29,76 +29,6 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.works-bg {
-    margin: 0;
-    padding: 0;
-}
-
-.loading {
-    position: fixed;
-    height: 100vh;
-    background-color: #000000;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-
-.loaded {
-    opacity: 0;
-    transition: all 0.6s;
-    z-index: -1;
-}
-
-.loader {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.loader span {
-    position: absolute;
-    border: 2px solid purple;
-    width: 100%;
-    height: 100%;
-    border-radius: 76% 24% 23% 77% / 36% 28% 72% 64%;
-    animation: animate 5s linear infinite;
-}
-
-.loader span:nth-child(2) {
-    border: 2px solid green;
-    animation-direction: reverse;
-    border-radius: 69% 31% 70% 30% / 38% 52% 48% 62%;
-}
-
-.loader span:nth-child(3) {
-    border: 2px solid green;
-    border-radius: 50% 50% 42% 58% / 57% 86% 14% 43%;
-    animation: animate 6s linear infinite;
-}
-
-.loader span:nth-child(4) {
-    border: 2px solid purple;
-    animation-direction: reverse;
-    border-radius: 51% 49% 25% 75% / 30% 66% 34% 70%;
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .container {
     width: 80%;
     margin-right: auto;
@@ -235,6 +165,73 @@ footer {
 
 
 /*ローディング*/
+.loading {
+    position: fixed;
+    height: 100vh;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.loaded {
+    opacity: 0;
+    transition: all 0.6s;
+    z-index: -1;
+}
+
+.loader {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.loader span {
+    position: absolute;
+    border: 2px solid purple;
+    width: 100%;
+    height: 100%;
+    border-radius: 76% 24% 23% 77% / 36% 28% 72% 64%;
+    animation: animate 5s linear infinite;
+}
+
+.loader span:nth-child(2) {
+    border: 2px solid green;
+    animation-direction: reverse;
+    border-radius: 69% 31% 70% 30% / 38% 52% 48% 62%;
+}
+
+.loader span:nth-child(3) {
+    border: 2px solid green;
+    border-radius: 50% 50% 42% 58% / 57% 86% 14% 43%;
+    animation: animate 6s linear infinite;
+}
+
+.loader span:nth-child(4) {
+    border: 2px solid purple;
+    animation-direction: reverse;
+    border-radius: 51% 49% 25% 75% / 30% 66% 34% 70%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*スライド*/
 .slideh {
     transform: translateY(-90px); /* 上に90pxの位置から */
     transition: transform 0.6s;
@@ -243,7 +240,7 @@ footer {
 }
 
 .slideb {
-    transform: translateY(90px); /* 上に90pxの位置から */
+    transform: translateY(90px); /* 下に90pxの位置から */
     transition: transform 0.6s;
     transition-delay: 0.4s;
     transition-timing-function: ease-in-out;
@@ -253,6 +250,18 @@ footer {
     transform: translateY(0); 
 }
 
+.slide-i1 {
+    opacity: 0;
+    transform: translateY(90px); /* 下に90pxの位置から */
+    transition: transform 0.6s;
+    transition-delay: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.slided-i {
+    opacity: 1;
+    transform: translateY(0); 
+}
 
 /*文字*/
 

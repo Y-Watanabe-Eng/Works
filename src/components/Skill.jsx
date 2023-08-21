@@ -21,7 +21,7 @@ export const Skill = () => {
         <motion.div className='skill'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.4, delay: 0.4 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
         >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>SKILL</h2>
             <h2 className='text-xl sm:text-2xl pt-6'>TECHNICAL SKILL</h2>
@@ -29,7 +29,7 @@ export const Skill = () => {
                 <p className='text-xl'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <img className='icon' src={HTML} alt="HTML" />
+                        <img className='icon slide-i1' src={HTML} alt="HTML" />
                     </div>
                     <div className='text-center'>
                         <img className='icon' src={CSS} alt="CSS" />
