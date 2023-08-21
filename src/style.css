@@ -237,13 +237,13 @@ footer {
 /*ローディング*/
 .slideh {
     transform: translateY(-90px); /* 上に90pxの位置から */
-    transition: transform 0.8s;
+    transition: transform 0.8s ease-in-out;
     transition-delay: 0.4s;
 }
 
 .slideb {
     transform: translateY(90px); /* 上に90pxの位置から */
-    transition: transform 0.8s;
+    transition: transform 0.8s ease-in-out;
     transition-delay: 0.4s;
 }
 
