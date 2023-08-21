@@ -29,7 +29,7 @@ export const Skill = () => {
                 <p className='text-xl'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <img className='icon slide-i1' src={HTML} alt="HTML" />
+                        <img className='icon' src={HTML} alt="HTML" />
                     </div>
                     <div className='text-center'>
                         <img className='icon' src={CSS} alt="CSS" />
