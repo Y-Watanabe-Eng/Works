@@ -1,7 +1,7 @@
 import '../style.css'
 import {AppL} from './AppL'
 import {AppR} from './AppR'
-import Github from "/icon/github-icon.svg";
+import Github from "/icon/github-mark-white.svg";
 import { motion } from "framer-motion";
 
 export const Dev = () => {
