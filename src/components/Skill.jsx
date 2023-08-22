@@ -10,7 +10,7 @@ import React from "/icon/react.svg";
 import Pandas from "/icon/Pandas.png"
 import Excel from "/icon/excel.svg";
 import VSCode from "/icon/visual-studio-code.svg";
-import Github from "/icon/github-icon.svg";
+import Github from "/icon/github-mark-white.svg";
 import PostgreSQL from "/icon/postgresql.svg";
 import Ubuntu from "/icon/ubuntu.svg";
 import { motion } from "framer-motion";
