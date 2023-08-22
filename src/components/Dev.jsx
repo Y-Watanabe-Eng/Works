@@ -19,7 +19,7 @@ export const Dev = () => {
             </div>
             <div className='appLR'>
                 <a 
-                className='w-24 text-xl bg-gray-800 hover:bg-green-800 text-white hover:text-black font-semiboid py-3 border border-4 border-green-800 hover:border-gray-800 rounded shadow'
+                className='w-24 text-xl bg-gray-800 hover:bg-green-800 text-white font-semiboid py-3 border border-4 border-green-800 hover:border-gray-800 rounded shadow'
                 href="https://github.com/Y-Watanabe-Eng/src/"
                 target='_blanc'
                 ><img src={Github} alt="Github" />More...</a>
