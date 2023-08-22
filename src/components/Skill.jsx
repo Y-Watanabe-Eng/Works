@@ -43,6 +43,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
+                            delay: 0.2,
                             },
                             },
                         }}
@@ -66,7 +67,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.2,
+                            delay: 0.4,
                             },
                             },
                         }}
@@ -90,7 +91,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.4,
+                            delay: 0.6,
                             },
                             },
                         }}
@@ -114,7 +115,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.6,
+                            delay: 0.8,
                             },
                             },
                         }}
@@ -147,6 +148,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
+                            delay: 0.2,
                             },
                             },
                         }}
@@ -170,7 +172,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.2,
+                            delay: 0.4,
                             },
                             },
                         }}
@@ -194,7 +196,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.4,
+                            delay: 0.6,
                             },
                             },
                         }}
@@ -230,6 +232,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
+                            delay: 0.2,
                             },
                             },
                         }}
@@ -253,7 +256,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.2,
+                            delay: 0.4,
                             },
                             },
                         }}
@@ -292,6 +295,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
+                            delay: 0.2,
                             },
                             },
                         }}
@@ -315,7 +319,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.2,
+                            delay: 0.4,
                             },
                             },
                         }}
@@ -339,7 +343,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.4,
+                            delay: 0.6,
                             },
                             },
                         }}
@@ -363,7 +367,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
-                            delay: 0.6,
+                            delay: 0.8,
                             },
                             },
                         }}
@@ -393,6 +397,7 @@ export const Skill = () => {
                             stiffness: 160,
                             damping: 20,
                             duration: 1.4,
+                            delay: 0.2,
                             },
                             },
                         }}
