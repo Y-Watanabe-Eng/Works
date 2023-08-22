@@ -29,7 +29,7 @@ export const Skill = () => {
                 <p className='text-xl'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <img className='icon' 
+                        <motion.img className='icon' 
                             variants={{
                             offscreen: { // 画面外の場合のスタイル
                             y: 100,
