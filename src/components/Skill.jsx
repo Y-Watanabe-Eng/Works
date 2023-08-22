@@ -29,33 +29,87 @@ export const Skill = () => {
                 <p className='text-xl'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <motion.img className='icon' 
-                            variants={{
+                        <motion.img className='icon' src={HTML} alt="HTML"
+                        variants={{
                             offscreen: { // 画面外の場合のスタイル
-                            y: 100,
+                            y: 60,
                             opacity: 0,
                             },
                             onscreen: { // 画面内の場合のスタイル
                             y: 0,
                             opacity: 1,
                             transition: {
-                            duration: 0.5,
+                            duration: 0.8,
                             },
                             },
-                            }}
+                        }}
                             initial="offscreen" // 初期表示はoffscreen
                             whileInView="onscreen" // 画面内に入ったらonscreen
                             viewport={{ once: false, amount: 0 }}
-                            src={HTML} alt="HTML" />
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon' src={CSS} alt="CSS" />
+                        <motion.img className='icon' src={CSS} alt="CSS"
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.2,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon pt-2 sm:pt-4' src={Python} alt="Python" />
+                        <motion.img className='icon pt-2 sm:pt-4' src={Python} alt="Python" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.4,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon pt-2 sm:pt-4' src={JavaScript} alt="JavaScript" />
+                        <motion.img className='icon pt-2 sm:pt-4' src={JavaScript} alt="JavaScript" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.6,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center pt-2 text-sm'>約3年</div>
                     <div className='text-center pt-2 text-sm'>約3年</div>
@@ -67,13 +121,66 @@ export const Skill = () => {
                 <p className='text-xl'>Flamework</p>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <img className='icon' src={Django} alt="Django" />
+                        <motion.img className='icon' src={Django} alt="Django" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon pt-1' src={Bootstrap} alt="Bootstrap" />
+                        <motion.img className='icon pt-1' src={Bootstrap} alt="Bootstrap" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.2,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon pt-1' src={Tailwind} alt="Tailwind" />
+                        <motion.img className='icon pt-1' src={Tailwind} alt="Tailwind" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.4,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
 
@@ -88,10 +195,45 @@ export const Skill = () => {
                 <p className='text-xl'>Library</p>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <img className='icon' src={React} alt="React" />
+                        <motion.img className='icon' src={React} alt="React" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon-h pt-1' src={Pandas} alt="Pandas" />
+                        <motion.img className='icon-h pt-1' src={Pandas} alt="Pandas" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.2,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
 
@@ -109,16 +251,87 @@ export const Skill = () => {
                 <p className='text-xl'>Other</p>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <img className='icon' src={Excel} alt="Excel" />
+                        <motion.img className='icon' src={Excel} alt="Excel"
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon' src={VSCode} alt="VSCode" />
+                        <motion.img className='icon' src={VSCode} alt="VSCode" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.2,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
-                        <img className='icon' src={Github} alt="Github" />
+                        <motion.img className='icon' src={Github} alt="Github" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.4,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div>
-                        <img className='icon' src={PostgreSQL} alt="PostgreSQL" />
+                        <motion.img className='icon' src={PostgreSQL} alt="PostgreSQL" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            delay: 0.6,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center pt-2 text-sm'>約5年</div>
                     <div className='text-center pt-2 text-sm'>約6ヶ月</div>
@@ -127,7 +340,24 @@ export const Skill = () => {
                 </div>
                 <div className="icon-flame grid grid-cols-4">
                     <div className='text-center'>
-                        <img className='icon' src={Ubuntu} alt="Ubuntu" />
+                        <motion.img className='icon' src={Ubuntu} alt="Ubuntu" 
+                        variants={{
+                            offscreen: { // 画面外の場合のスタイル
+                            y: 60,
+                            opacity: 0,
+                            },
+                            onscreen: { // 画面内の場合のスタイル
+                            y: 0,
+                            opacity: 1,
+                            transition: {
+                            duration: 0.8,
+                            },
+                            },
+                        }}
+                        initial="offscreen" // 初期表示はoffscreen
+                        whileInView="onscreen" // 画面内に入ったらonscreen
+                        viewport={{ once: false, amount: 0 }}
+                        />
                     </div>
                     <div className='text-center'>
                     

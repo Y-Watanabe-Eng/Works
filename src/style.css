@@ -44,6 +44,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 nav {
@@ -101,7 +102,7 @@ nav h3 {
 }
 
 .icon {
-    width: 45%;
+    width: 40%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -176,7 +177,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .loaded {
@@ -250,17 +251,19 @@ footer {
     transform: translateY(0); 
 }
 
-.slide-i1 {
+#slide-i1 {
     opacity: 0;
     transform: translateY(90px); /* 下に90pxの位置から */
-    transition: transform 0.6s;
+    animation: slidei 0.6s;
     transition-delay: 0.4s;
     transition-timing-function: ease-in-out;
 }
 
-.slided-i {
-    opacity: 1;
-    transform: translateY(0); 
+@keyframes slidei {
+    to {
+        opacity: 1;
+        transform: initial; 
+    }
 }
 
 /*文字*/
@@ -317,6 +320,15 @@ h3 {
 
     .icon {
         width: 55%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .icon-h {
+        width: 90%;
         top: 0;
         bottom: 0;
         left: 0;
