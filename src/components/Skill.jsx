@@ -214,7 +214,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.tailwind}>
-                    <div className='text-center pt-5'>
+                    <div className='text-center pt-4'>
                         <motion.img className='icon pt-1' src={Tailwind} alt="Tailwind" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
