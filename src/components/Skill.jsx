@@ -101,7 +101,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.python}>
-                    <div className='text-center pt-4'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon pt-2 sm:pt-4' src={Python} alt="Python" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -127,7 +127,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.javascript}>
-                    <div className='text-center pt-4'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon pt-2 sm:pt-4' src={JavaScript} alt="JavaScript" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -188,7 +188,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.bootstrap}>
-                    <div className='text-center pt-4'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon pt-1' src={Bootstrap} alt="Bootstrap" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
