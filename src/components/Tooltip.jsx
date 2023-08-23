@@ -10,7 +10,7 @@ export const Tooltip = ({ children, content }) => {
 
         return (
             <div>
-                <div className='relative'
+                <div className='relative flex'
                     onMouseEnter={() => setShow(true)}
                     onMouseLeave={() => setShow(false)}
                 >

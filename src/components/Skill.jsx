@@ -46,7 +46,7 @@ export const Skill = () => {
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>SKILL</h2>
             <h2 className='text-xl sm:text-2xl pt-6'>TECHNICAL SKILL</h2>
             <div className='py-8'>
-                <p className='text-xl'>Language</p>
+                <p className='text-xl pl-4'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
                     <Tooltip content={tooltipContent.html}>
                     <div className='text-center'>
@@ -159,7 +159,7 @@ export const Skill = () => {
                 </div>
             </div>
             <div className='py-10'>
-                <p className='text-xl'>Flamework</p>
+                <p className='text-xl pl-4'>Flamework</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.django}>
                     <div className='text-center'>
@@ -249,7 +249,7 @@ export const Skill = () => {
                 </div>
             </div>
             <div className='py-10'>
-                <p className='text-xl'>Library</p>
+                <p className='text-xl pl-4'>Library</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.react}>
                     <div className='text-center'>
@@ -316,7 +316,7 @@ export const Skill = () => {
                 </div>
             </div>
             <div className='py-10'>
-                <p className='text-xl'>Other</p>
+                <p className='text-xl pl-4'>Other</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.excel}>
                     <div className='text-center'>
