@@ -22,8 +22,17 @@ const tooltipContent = {
     html: "HTML\n・社内イントラ管理\n・Webアプリ作成\n・個人サイト作成\n・本ポートフォリオ作成",
     css: "CSS\n・社内イントラ管理\n・Webアプリ作成\n・個人サイト作成\n・本ポートフォリオ作成",
     python: "Python\n・Webアプリ作成\n・Webスクレイピング\n・データ分析\n・作業自動化",
-    javascript: "JavaScript\n・Webアプリ作成\n・本ポートフォリオ作成"
-
+    javascript: "JavaScript\n・Webアプリ作成\n・本ポートフォリオ作成",
+    django: "Django\n・Webアプリ作成",
+    bootstrap: "Bootstrap\n・Webアプリ作成",
+    tailwind: "Tailwind\n・Webアプリ作成\n・本ポートフォリオ作成",
+    react: "React.js\n・Webアプリ作成\n・本ポートフォリオ作成",
+    pandas: "Pandas\n・データ分析",
+    excel: "Excel\n◆VBA\n・入電件数の集計\n・検索機能の実装\n・ソート⇒コピーの自動化\n・Wordファイルの生成\n◆各種関数",
+    vscode: "VSCode\n・コーディングに使用",
+    github: "GitHub\n・ポートフォリオの公開\n・ソース管理",
+    postgresql: "PostgreSQL\n・ユーザ管理DB\n・メモ帳管理DB",
+    ubuntu: "Ubuntu\n・Webアプリの公開\n・crontabによる定期実行",
   };
 
 export const Skill = () => {
@@ -152,6 +161,7 @@ export const Skill = () => {
             <div className='py-10'>
                 <p className='text-xl'>Flamework</p>
                 <div className="icon-flame grid grid-cols-4">
+                <Tooltip content={tooltipContent.django}>
                     <div className='text-center'>
                         <motion.img className='icon' src={Django} alt="Django" 
                         variants={{
@@ -176,6 +186,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.bootstrap}>
                     <div className='text-center'>
                         <motion.img className='icon pt-1' src={Bootstrap} alt="Bootstrap" 
                         variants={{
@@ -200,6 +212,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.tailwind}>
                     <div className='text-center'>
                         <motion.img className='icon pt-1' src={Tailwind} alt="Tailwind" 
                         variants={{
@@ -224,6 +238,7 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
                     <div className='text-center'>
 
                     </div>
@@ -236,6 +251,7 @@ export const Skill = () => {
             <div className='py-10'>
                 <p className='text-xl'>Library</p>
                 <div className="icon-flame grid grid-cols-4">
+                <Tooltip content={tooltipContent.react}>
                     <div className='text-center'>
                         <motion.img className='icon' src={React} alt="React" 
                         variants={{
@@ -260,6 +276,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.pandas}>
                     <div className='text-center'>
                         <motion.img className='icon-h pt-1' src={Pandas} alt="Pandas" 
                         variants={{
@@ -284,6 +302,7 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
                     <div className='text-center'>
 
                     </div>
@@ -299,6 +318,7 @@ export const Skill = () => {
             <div className='py-10'>
                 <p className='text-xl'>Other</p>
                 <div className="icon-flame grid grid-cols-4">
+                <Tooltip content={tooltipContent.excel}>
                     <div className='text-center'>
                         <motion.img className='icon' src={Excel} alt="Excel"
                         variants={{
@@ -323,6 +343,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.vscode}>
                     <div className='text-center'>
                         <motion.img className='icon' src={VSCode} alt="VSCode" 
                         variants={{
@@ -347,6 +369,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.github}>
                     <div className='text-center'>
                         <motion.img className='icon' src={Github} alt="Github" 
                         variants={{
@@ -371,6 +395,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.postgresql}>
                     <div>
                         <motion.img className='icon' src={PostgreSQL} alt="PostgreSQL" 
                         variants={{
@@ -395,12 +421,14 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
                     <div className='text-center pt-2 text-sm'>約5年</div>
                     <div className='text-center pt-2 text-sm'>約6ヶ月</div>
                     <div className='text-center pt-2 text-sm'>約6ヶ月</div>
                     <div className='text-center pt-2 text-sm'>約2ヶ月</div>
                 </div>
                 <div className="icon-flame grid grid-cols-4">
+                <Tooltip content={tooltipContent.ubuntu}>
                     <div className='text-center'>
                         <motion.img className='icon' src={Ubuntu} alt="Ubuntu" 
                         variants={{
@@ -425,6 +453,7 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
                     <div className='text-center'>
                     
                     </div>

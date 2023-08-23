@@ -166,8 +166,8 @@ footer {
 
 .tooltip {
     position: absolute;
-    white-space: pre-wrap;
-    min-width: 120%;
+    white-space: pre;
+    min-width: 160%;
     max-width: 300%;
     font-size: 12px;
 }
