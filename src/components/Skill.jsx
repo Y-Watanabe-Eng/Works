@@ -14,6 +14,17 @@ import Github from "/icon/github-mark-white.svg";
 import PostgreSQL from "/icon/postgresql.svg";
 import Ubuntu from "/icon/ubuntu.svg";
 import { motion } from "framer-motion";
+import { Tooltip } from "./Tooltip";
+
+
+// ツールチップの内容を定義する
+const tooltipContent = {
+    html: "HTML\n・社内イントラ管理\n・Webアプリ作成\n・個人サイト作成\n・本ポートフォリオ作成",
+    css: "CSS\n・社内イントラ管理\n・Webアプリ作成\n・個人サイト作成\n・本ポートフォリオ作成",
+    python: "Python\n・Webアプリ作成\n・Webスクレイピング\n・データ分析\n・作業自動化",
+    javascript: "JavaScript\n・Webアプリ作成\n・本ポートフォリオ作成"
+
+  };
 
 export const Skill = () => {
 
@@ -28,6 +39,7 @@ export const Skill = () => {
             <div className='py-8'>
                 <p className='text-xl'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
+                    <Tooltip content={tooltipContent.html}>
                     <div className='text-center'>
                         <motion.img className='icon' src={HTML} alt="HTML"
                         variants={{
@@ -52,6 +64,8 @@ export const Skill = () => {
                             viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.css}>
                     <div className='text-center'>
                         <motion.img className='icon' src={CSS} alt="CSS"
                         variants={{
@@ -76,6 +90,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.python}>
                     <div className='text-center'>
                         <motion.img className='icon pt-2 sm:pt-4' src={Python} alt="Python" 
                         variants={{
@@ -100,6 +116,8 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
+                    <Tooltip content={tooltipContent.javascript}>
                     <div className='text-center'>
                         <motion.img className='icon pt-2 sm:pt-4' src={JavaScript} alt="JavaScript" 
                         variants={{
@@ -124,6 +142,7 @@ export const Skill = () => {
                         viewport={{ once: false, amount: 0 }}
                         />
                     </div>
+                    </Tooltip>
                     <div className='text-center pt-2 text-sm'>約3年</div>
                     <div className='text-center pt-2 text-sm'>約3年</div>
                     <div className='text-center pt-2 text-sm'>約6ヶ月</div>
