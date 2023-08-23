@@ -168,6 +168,8 @@ footer {
     position: absolute;
     white-space: pre-wrap;
     min-width: 120%;
+    max-width: 300%;
+    font-size: 12px;
 }
 
 
@@ -367,6 +369,10 @@ h3 {
     header nav {
         justify-content: flex-start;
         padding-left: 5%;
+    }
+
+    .tooltip {
+        min-width: 240%;
     }
 }
 
