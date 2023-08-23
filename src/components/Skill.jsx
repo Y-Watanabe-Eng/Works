@@ -49,7 +49,7 @@ export const Skill = () => {
                 <p className='text-xl pl-4'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
                     <Tooltip content={tooltipContent.html}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={HTML} alt="HTML"
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -75,7 +75,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.css}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={CSS} alt="CSS"
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -101,7 +101,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.python}>
-                    <div className='text-center'>
+                    <div className='text-center pt-4'>
                         <motion.img className='icon pt-2 sm:pt-4' src={Python} alt="Python" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -127,7 +127,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.javascript}>
-                    <div className='text-center'>
+                    <div className='text-center pt-4'>
                         <motion.img className='icon pt-2 sm:pt-4' src={JavaScript} alt="JavaScript" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -162,7 +162,7 @@ export const Skill = () => {
                 <p className='text-xl pl-4'>Flamework</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.django}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={Django} alt="Django" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -188,7 +188,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.bootstrap}>
-                    <div className='text-center'>
+                    <div className='text-center pt-4'>
                         <motion.img className='icon pt-1' src={Bootstrap} alt="Bootstrap" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -214,7 +214,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.tailwind}>
-                    <div className='text-center'>
+                    <div className='text-center pt-5'>
                         <motion.img className='icon pt-1' src={Tailwind} alt="Tailwind" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -239,7 +239,7 @@ export const Skill = () => {
                         />
                     </div>
                     </Tooltip>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
 
                     </div>
                     <div className='text-center pt-2 text-sm'>約6ヶ月</div>
@@ -252,7 +252,7 @@ export const Skill = () => {
                 <p className='text-xl pl-4'>Library</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.react}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={React} alt="React" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -278,7 +278,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.pandas}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon-h pt-1' src={Pandas} alt="Pandas" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -303,10 +303,10 @@ export const Skill = () => {
                         />
                     </div>
                     </Tooltip>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
 
                     </div>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
 
                     </div>
                     <div className='text-center pt-2 text-sm'>約1ヶ月</div>
@@ -319,7 +319,7 @@ export const Skill = () => {
                 <p className='text-xl pl-4'>Other</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.excel}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={Excel} alt="Excel"
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -345,7 +345,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.vscode}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={VSCode} alt="VSCode" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -371,7 +371,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.github}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={Github} alt="Github" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -397,7 +397,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.postgresql}>
-                    <div>
+                    <div className='text-center pt-4'>
                         <motion.img className='icon' src={PostgreSQL} alt="PostgreSQL" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -429,7 +429,7 @@ export const Skill = () => {
                 </div>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.ubuntu}>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={Ubuntu} alt="Ubuntu" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
@@ -454,10 +454,10 @@ export const Skill = () => {
                         />
                     </div>
                     </Tooltip>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                     
                     </div>
-                    <div className='text-center'>
+                    <div className='text-center pt-3'>
                     
                     </div>
                     <div>

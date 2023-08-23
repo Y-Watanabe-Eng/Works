@@ -167,8 +167,7 @@ footer {
 .tooltip {
     position: absolute;
     white-space: pre-wrap;
-    min-width: 160%;
-    max-width: 300%;
+    min-width: 120%;
     font-size: 12px;
 }
 
@@ -302,18 +301,14 @@ h3 {
 }
 
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:980px) {
 
     .nav-links {
         width: 45%;
     }
 
-}
-
-
-@media only screen and (max-width:840px) {
     .tooltip {
-        min-width: 240%;
+        min-width: 180%;
     }
 }
 
