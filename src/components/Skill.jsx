@@ -397,7 +397,7 @@ export const Skill = () => {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.postgresql}>
-                    <div className='text-center pt-4'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon' src={PostgreSQL} alt="PostgreSQL" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
