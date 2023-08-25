@@ -159,7 +159,7 @@ export const Skill = () => {
                 </div>
             </div>
             <div className='py-10'>
-                <p className='text-xl pl-4'>Flamework</p>
+                <p className='text-xl pl-4'>Framework</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.django}>
                     <div className='text-center pt-3'>
