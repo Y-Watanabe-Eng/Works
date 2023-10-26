@@ -44,9 +44,14 @@ export const Skill = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
         >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>SKILL</h2>
+            <h2 className='text-xl sm:text-2xl pt-6'>資格</h2>
+            <div className='py-8'>
+                <p className='text-xl pl-4'>・Python3エンジニア認定基礎</p>
+                <p className='text-xl pl-4'>・全商 情報処理検定2級 ビジネス部門</p>
+            </div>
             <h2 className='text-xl sm:text-2xl pt-6'>開発スキル</h2>
             <div className='py-8'>
-                <p className='text-xl pl-4'>Language</p>
+                <p className='text-xl pl-4'>言語</p>
                 <div className="icon-flame grid grid-cols-4">
                     <Tooltip content={tooltipContent.html}>
                     <div className='text-center pt-3'>
@@ -159,7 +164,7 @@ export const Skill = () => {
                 </div>
             </div>
             <div className='py-10'>
-                <p className='text-xl pl-4'>Framework</p>
+                <p className='text-xl pl-4'>フレームワーク</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.django}>
                     <div className='text-center pt-3'>
@@ -249,7 +254,7 @@ export const Skill = () => {
                 </div>
             </div>
             <div className='py-10'>
-                <p className='text-xl pl-4'>Library</p>
+                <p className='text-xl pl-4'>ライブラリ</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.react}>
                     <div className='text-center pt-3'>
@@ -316,7 +321,7 @@ export const Skill = () => {
                 </div>
             </div>
             <div className='py-10'>
-                <p className='text-xl pl-4'>Other</p>
+                <p className='text-xl pl-4'>その他</p>
                 <div className="icon-flame grid grid-cols-4">
                 <Tooltip content={tooltipContent.excel}>
                     <div className='text-center pt-3'>
