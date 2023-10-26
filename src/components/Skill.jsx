@@ -49,7 +49,7 @@ export const Skill = () => {
                 <p className='text-base pb-4'>・Python3エンジニア認定基礎試験</p>
                 <p className='text-base pb-4'>・全商 情報処理検定 2級<br/>　ビジネス部門</p>
                 <p className='text-base pb-4'>・全商 日本語ワープロ検定 準2級</p>
-                <p className='text-base'>全商 文書デザイン検定 2級</p>
+                <p className='text-base'>・全商 文書デザイン検定 2級</p>
             </div>
             <h2 className='text-xl sm:text-2xl pt-6'>開発スキル</h2>
             <div className='py-8'>
