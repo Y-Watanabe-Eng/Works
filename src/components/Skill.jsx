@@ -44,7 +44,7 @@ export const Skill = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
         >
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>SKILL</h2>
-            <h2 className='text-xl sm:text-2xl pt-6'>TECHNICAL SKILL</h2>
+            <h2 className='text-xl sm:text-2xl pt-6'>開発スキル</h2>
             <div className='py-8'>
                 <p className='text-xl pl-4'>Language</p>
                 <div className="icon-flame grid grid-cols-4">
@@ -469,7 +469,7 @@ export const Skill = () => {
                     <div className='text-center pt-2 text-sm'></div>
                 </div>
             </div>
-            <h2 className='text-xl sm:text-2xl pt-6'>MANAGEMENT SKILL</h2>
+            <h2 className='text-xl sm:text-2xl pt-6'>マネジメントスキル</h2>
             <div className='pt-3'>
                 <p className='text-base'>・グループリーダー業務<br/>
                     ＞＞期間:約1年半<br/>
