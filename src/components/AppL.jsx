@@ -22,7 +22,7 @@ export const AppL = () => {
         >DETAIL</Link>
       </div>
 
-      <div className='appLR'>
+      <div className='appLR pt-2'>
         <img src={kempichan_antenna} alt="kempichan_antenna" />
       </div>
       <div className='appLR'>
