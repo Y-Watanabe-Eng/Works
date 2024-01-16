@@ -23,7 +23,7 @@ import { Tooltip } from "./Tooltip";
 const tooltipContent = {
     html: "HTML\n・社内イントラ管理\n・Webアプリ作成\n・個人サイト作成\n・本ポートフォリオ作成",
     css: "CSS\n・社内イントラ管理\n・Webアプリ作成\n・個人サイト作成\n・本ポートフォリオ作成",
-    python: "Python\n・Webアプリ作成\n・Webスクレイピング\n・データ分析\n・作業自動化\n※学習サイトPaizaにて\n&nbsp;ランクB(レート1461)",
+    python: "Python\n・Webアプリ作成\n・Webスクレイピング\n・データ分析\n・作業自動化\n※学習サイトPaizaにて\n　ランクB(レート1461)",
     javascript: "JavaScript\n・Webアプリ作成\n・本ポートフォリオ作成",
     typescript: "TypeScript\n・WEBサイト作成",
     django: "Django\n・Webアプリ作成",
@@ -51,7 +51,7 @@ const tooltipContent = {
             <h2 className='text-xl sm:text-2xl pt-6'>資格</h2>
             <div className='py-8'>
                 <p className='text-base pb-4'>・Python3エンジニア認定基礎試験</p>
-                <p className='text-base pb-4'>・全商 情報処理検定 2級<br/>&nbsp;ビジネス部門</p>
+                <p className='text-base pb-4'>・全商 情報処理検定 2級<br/>　ビジネス部門</p>
                 <p className='text-base pb-4'>・全商 日本語ワープロ検定 準2級</p>
                 <p className='text-base'>・全商 文書デザイン検定 2級</p>
             </div>
@@ -168,47 +168,47 @@ const tooltipContent = {
                     <div className='text-center pt-2 text-sm'>約1年</div>
                     <div className='text-center pt-2 text-sm'>約1ヶ月</div>
                 </div>
-            </div>
-            <div className="icon-flame grid grid-cols-4">
-                <Tooltip content={tooltipContent.typescript}>
-                    <div className='text-center pt-3'>
-                        <motion.img className='icon' src={TypeScript} alt="TypeScript" 
-                        variants={{
-                            offscreen: { // 画面外の場合のスタイル
-                            y: 60,
-                            opacity: 0,
-                            },
-                            onscreen: { // 画面内の場合のスタイル
-                            y: 0,
-                            opacity: 1,
-                            transition: {
-                            type: "spring",
-                            stiffness: 160,
-                            damping: 20,
-                            duration: 1.4,
-                            delay: 0.2,
-                            },
-                            },
-                        }}
-                        initial="offscreen" // 初期表示はoffscreen
-                        whileInView="onscreen" // 画面内に入ったらonscreen
-                        viewport={{ once: false, amount: 0 }}
-                        />
+                <div className="icon-flame grid grid-cols-4">
+                    <Tooltip content={tooltipContent.typescript}>
+                        <div className='text-center pt-3'>
+                            <motion.img className='icon' src={TypeScript} alt="TypeScript" 
+                            variants={{
+                                offscreen: { // 画面外の場合のスタイル
+                                y: 60,
+                                opacity: 0,
+                                },
+                                onscreen: { // 画面内の場合のスタイル
+                                y: 0,
+                                opacity: 1,
+                                transition: {
+                                type: "spring",
+                                stiffness: 160,
+                                damping: 20,
+                                duration: 1.4,
+                                delay: 0.2,
+                                },
+                                },
+                            }}
+                            initial="offscreen" // 初期表示はoffscreen
+                            whileInView="onscreen" // 画面内に入ったらonscreen
+                            viewport={{ once: false, amount: 0 }}
+                            />
+                        </div>
+                        </Tooltip>
+                        <div className='text-center pt-3'>
+                        
+                        </div>
+                        <div className='text-center pt-3'>
+                        
+                        </div>
+                        <div>
+                        
+                        </div>
+                        <div className='text-center pt-2 text-sm'>約1ヶ月</div>
+                        <div className='text-center pt-2 text-sm'></div>
+                        <div className='text-center pt-2 text-sm'></div>
+                        <div className='text-center pt-2 text-sm'></div>
                     </div>
-                    </Tooltip>
-                    <div className='text-center pt-3'>
-                    
-                    </div>
-                    <div className='text-center pt-3'>
-                    
-                    </div>
-                    <div>
-                    
-                    </div>
-                    <div className='text-center pt-2 text-sm'>約1ヶ月</div>
-                    <div className='text-center pt-2 text-sm'></div>
-                    <div className='text-center pt-2 text-sm'></div>
-                    <div className='text-center pt-2 text-sm'></div>
                 </div>
             <div className='py-10'>
                 <p className='text-xl pl-4'>フレームワーク</p>
@@ -240,7 +240,7 @@ const tooltipContent = {
                     </div>
                     </Tooltip>
                     <Tooltip content={tooltipContent.next}>
-                    <div className='text-center pt-4'>
+                    <div className='text-center pt-3'>
                         <motion.img className='icon pt-1' src={Next} alt="Next.js" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル

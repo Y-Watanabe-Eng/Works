@@ -6,6 +6,7 @@ import { Skill } from "./components/Skill";
 import { Profile } from "./components/Profile";
 import { MiniMemo } from "./components/MiniMemo";
 import { Tobaccost } from "./components/Tobaccost";
+import { Kempichan } from "./components/Kempichan";
 import { Footer } from "./components/Footer";
 import { Bottom } from "./components/Bottom";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -32,6 +33,7 @@ export const App = () => {
           <Route path='/Works/Profile' element={<Profile />} />
           <Route path='/Works/MiniMemo' element={<MiniMemo />} />
           <Route path='/Works/Tobaccost' element={<Tobaccost />} />
+          <Route path='/Works/Kempichan' element={<Kempichan />} />
 
         </Routes>
 

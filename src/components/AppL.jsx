@@ -25,7 +25,9 @@ export const AppL = () => {
       <div className='appLR'>
         <img src={kempichan_antenna} alt="kempichan_antenna" />
       </div>
-      <p>※配信者ご本人様の許可取得済み</p>
+      <div className='appLR'>
+        <span>※配信者ご本人様の許可取得済み※</span>
+      </div>
       <div className='appLR'>
         <a
         className='w-20 m-3 text-base bg-black hover:bg-gray-800 text-white py-2 border border-green-800 rounded shadow'

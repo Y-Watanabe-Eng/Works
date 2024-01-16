@@ -3,7 +3,7 @@ import kempichan_antenna from "/img/kempichan_antenna.png"
 import { motion } from "framer-motion";
 
 
-export const Tobaccost = () => {
+export const Kempichan = () => {
   return (
     <motion.div className='detail'
     initial={{ opacity: 0 }}
