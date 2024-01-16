@@ -17,7 +17,7 @@ export const Kempichan = () => {
           <div>
             <p className='text-xl'>サイト内容</p><br />
             <p>・謎解き製作者兼、配信者のけんぴ。さんの
-            <br/>&nbsp;Youtube動画一覧</p><br />
+            <br/>　Youtube動画一覧</p><br />
 
             <p className='text-xl'>実装環境</p><br />
             ・ローカルOS:Windows11<br />

@@ -497,9 +497,9 @@ const tooltipContent = {
                         />
                     </div>
                     </Tooltip>
-                    <div className='text-center pt-2 text-sm'>約5年</div>
-                    <div className='text-center pt-2 text-sm'>約6ヶ月</div>
-                    <div className='text-center pt-2 text-sm'>約6ヶ月</div>
+                    <div className='text-center pt-2 text-sm'>約9年</div>
+                    <div className='text-center pt-2 text-sm'>約1年</div>
+                    <div className='text-center pt-2 text-sm'>約1年</div>
                     <div className='text-center pt-2 text-sm'>約2ヶ月</div>
                 </div>
                 <div className="icon-flame grid grid-cols-4">
