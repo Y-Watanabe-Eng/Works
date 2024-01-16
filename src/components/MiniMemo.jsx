@@ -79,8 +79,7 @@ export const MiniMemo = () => {
 
             <br />
 
-            <p className='text-xl'>今後の予定</p><br /> 
-            <p>Googleアカウント認証機能を追加したいと考えています。</p><br />          </div>
+          </div>
 
           <div className='pt-10'>
             <p className='py-4'>新規作成画面</p>
