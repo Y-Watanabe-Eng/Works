@@ -242,7 +242,7 @@ const tooltipContent = {
                     </Tooltip>
                     <Tooltip content={tooltipContent.next}>
                     <div className='text-center pt-3'>
-                        <motion.img className='icon pt-1' src={Next} alt="Next.js" 
+                        <motion.img className='icon' src={Next} alt="Next.js" 
                         variants={{
                             offscreen: { // 画面外の場合のスタイル
                             y: 60,
