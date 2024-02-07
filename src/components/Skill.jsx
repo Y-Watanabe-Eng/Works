@@ -50,6 +50,7 @@ const tooltipContent = {
             <h2 className='text-2xl sm:text-4xl font-CLEAT'>SKILL</h2>
             <h2 className='text-xl sm:text-2xl pt-6'>資格</h2>
             <div className='py-8'>
+                <p className='text-base pb-4'>・LinuCレベル1認定認定</p>
                 <p className='text-base pb-4'>・Python3エンジニア認定基礎試験</p>
                 <p className='text-base pb-4'>・全商 情報処理検定 2級<br/>　ビジネス部門</p>
                 <p className='text-base pb-4'>・全商 日本語ワープロ検定 準2級</p>
