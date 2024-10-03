@@ -18,7 +18,8 @@ export const Profile = () => {
             <div>
                 <p className='text-base'>初めてITというものに触れたのは20歳頃に組んでいたバンドのHPを<br/>
                 作るところからだったと思います。</p><br/>
-                <p className='text-base'> 業務ではVBAを活用しながら、独学でPython、JavaScript(React.js)を学習中。<br/>
+                <p className='text-base'> 業務ではAIX、Linuxを中心としたサーバ群や各種ネットワーク機器に関わり、直接的にはBigIPやHULFTといった製品の設定に触れることが多いです。<br/>
+                独学ではPython、JavaScript(React.js)を学習。<br/>
                 基本的にはWEBアプリを主軸に、業務効率化系のアプリ作成や、<br/>
                 環境構築～WEBアプリの公開までをスムーズにできるよう、<br/>
                 各種ライブラリ、HTML/CSS、VSCode、DB、Linux、AWS周りも<br/>
