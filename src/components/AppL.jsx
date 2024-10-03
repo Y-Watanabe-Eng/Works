@@ -12,6 +12,9 @@ export const AppL = () => {
         <img src={MiniMemo} alt="MiniMemo" />
       </div>
       <div className='appLR'>
+        <span>※AWS無料期間超過のため一旦停止中※</span>
+      </div>
+      <div className='appLR'>
         <a
         className='w-20 m-3 text-base bg-black hover:bg-gray-800 text-white py-2 border border-green-800 rounded shadow'
         href="https://yw-app.net/"
